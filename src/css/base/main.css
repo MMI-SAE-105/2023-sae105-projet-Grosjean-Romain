@@ -1,0 +1,59 @@
+/* Traitement général des éléments
+
+Sommaire :
+
+    1. Uniformisation des boites
+    2. Uniformisation de la mise en forme des boutons
+    3. Règles typographiques générales
+    4. Classes utilitaires
+/*
+
+/* Uniformisation des boites */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Uniformisation de la mise en forme des boutons */
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Règles typographiques générales */
+
+body {
+    
+}
+
+h1 {
+    
+}
+
+h2 {
+    
+}
+
+h3 {
+    
+}
+
+p {
+    
+}
+
+/* Classes utilitaires */
+
+.list-unstyled {
+    
+}

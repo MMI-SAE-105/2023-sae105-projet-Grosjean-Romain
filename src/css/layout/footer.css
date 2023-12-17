@@ -1,0 +1,41 @@
+/* Footer des pages
+
+Sommaire :
+
+    1. footer
+    2. footer a
+    3. footer__iconSocial
+    4. footer__list
+    5. footer__title
+    6. footer__address
+    7. footer__logoLFAW
+*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__iconSocial {
+
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__title {
+    text-transform: uppercase;
+}
+
+.footer__address {
+   
+}
+
+.footer__logoLFAW {
+ 
+}

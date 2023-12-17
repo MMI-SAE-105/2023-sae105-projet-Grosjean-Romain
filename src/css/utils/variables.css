@@ -1,0 +1,58 @@
+/* Variables CSS
+
+Sommaire :
+
+    1. Styles de l'harmonie colorée
+    2. Polices de caractère
+    3. Tailles de police de caractère
+    4. Font variantes
+    5. Espacements
+*/
+
+:root {
+    /* Styles de l'harmonie colorée */
+    --brand-turquoise: #72998A;
+    --brand-green-dark: #37462A;
+    --brand-green-light: #809852;
+    --brand-beige-dark: #C9B5A5;
+    --brand-beige-light: #D8C4B3;
+    --black-1: #1B1B1B;
+    --black-2: #383838;
+    --grey-1: #C6C6C6;
+    --grey-2: #E2E2E1;
+    --white: #FAFAFA;
+    --system-1: #971B19;
+    --system-2: #F5B019;
+
+    /* Polices de caractère */
+    --font-heading-1: 'Futura Md BT', sans-serif, medium;
+    --font-heading-2: 'Lucida', sans-serif, bold;
+    --font-body: 'Gadugi', serif;
+    --font-small-text: 'Gadugi', sans-serif;
+    --font-button: 'Lucida', sans-serif, bold, uppercase;
+    --font-small-uppercase: 'Gadugi', sans-serif, uppercase;
+  
+    /* Tailles de police de caractère */
+    --title-main: rem;
+    --title-xl: rem;
+    --text-xxl: rem;
+    --text-xl: rem;
+    --text-md: rem;
+    --text-sm: rem;
+    --text-xs: rem;
+
+    /* Font variantes */
+    --letter-spacing: rem;
+
+    /* Espacements */
+    --space1x: 8px;
+    --space2x: 16px;
+    --space3x: 24px;
+    --space4x: 32px;
+    --space5x: 40px;
+    --space6x: 48px;
+    --space7x: 56px;
+    --space8x: 64px;
+    --space9x: 72px;
+    --space10x: 80px;
+}

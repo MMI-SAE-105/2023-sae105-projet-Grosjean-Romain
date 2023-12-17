@@ -1,0 +1,64 @@
+/* Composant - Menu
+
+Sommaire :
+
+    1. menu
+    2. menu-btn
+    3. menu-btn__bar
+    4. menu-btn__bar::before
+    5. menu-btn__bar::after    
+*/
+
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    background-image: url();
+}
+
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__list {
+    margin-top: vh;
+    margin-left: vw;
+}
+
+.menu__item {
+    margin-top: 100%;
+}
+
+.menu__link {
+    color: var(--);
+    text-decoration: none;
+}
+
+.menu-btn {}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    display: block;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {}
+
+.menu-btn__bar::after {}
+
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    background-color: var(--);
+    transform: rotate(deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(deg);
+    top: 0;
+}

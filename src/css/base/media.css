@@ -1,0 +1,35 @@
+/* Traitement des médias
+
+Sommaire :
+
+    1. Images et vidéos
+    2. Figure
+    3. Overlay
+*/
+
+/* Images et vidéos */
+
+img,
+video {
+   
+}
+
+/* Figure */
+
+figure {
+
+}
+
+/* Overlay */
+
+.duotone {
+   
+}
+
+.duotone::before {
+   
+}
+
+.duotone>img {
+   
+}
