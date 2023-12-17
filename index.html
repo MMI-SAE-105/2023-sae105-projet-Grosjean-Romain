@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lang.</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <title>Redirection</title>
+    <link rel="stylesheet" href="src/css/vendors/style.css">
+    <script>
+        function redirectToLanguage() {
+            const userLanguage = navigator.language || navigator.userLanguage;
+            const languagePrefix = userLanguage.startsWith('fr') ? 'fr' : 'en';
+
+            window.location.href = `/pages/${languagePrefix}/index.html`;
+        }
+
+        redirectToLanguage();
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="/pages/fr/index.html">Français</a>
-            </li>
-            <li>
-                <a href="/pages/en/index.html">English</a>
-            </li>
-        </ul>
-    </nav>
+    <p>Redirection en cours... Redirection in process...</p>
 </body>
 
 </html>
