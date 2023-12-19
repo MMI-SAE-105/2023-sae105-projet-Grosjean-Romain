@@ -1,56 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Finds A Way Website" />
     <title>Welcome to Life Finds A Way!</title>
-    <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="icon" href="/public/icon/logos/logo_base.svg">
+    <link rel="stylesheet" href="/">
     <link rel="alternate" hreflang="en" href="/pages/en/index.html">
-    </link>
-    </head>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
 
-<body>
-    <header>
-        <a href="/">
-            <img src="icone logo" alt="logo" />
-        </a>
-        <button>
-            <img src="" />
-        </button>
-        <button>
-            <span></span>
-        </button>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href="paleoart.html">Paleoart</a></li>
-                <li><a href="contacform.html">Contact form</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="otherprojects">Other Projects</a></li>
-                <li><a href="glossary.html">Glossary</a></li>
-            </ul>
-        </nav>
-        <video /img (gif) src="image" alt="" />
+<body x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 500 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__begin">
+            <a href="/pages/en/index.html">
+                <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+            </a>
+        </div>
+        <div class="header__end">
+            <button id="language-button" class="header__language-button" aria-label="Language"
+                aria-controls="languageSelection">
+                <div id="language-button-selected">
+                    <span data-role="0"><img src="/public/icon/32px/en_flag.svg" alt="English flag">EN<img
+                            src="/public/icon/24px/chevron-down.svg"></span>
+                </div>
+            </button>
+            <div id="Language-button-list">
+                <ul id="Language-list">
+                    <li>
+                        <a href="/pages/en/index.html" rel="alternate" hreflang="en-EN">
+                            <img src="/public/icon/32px/en_flag.svg" alt="English flag">English</a>
+                    </li>
+                    <li>
+                        <a href="/pages/fr/index.html" rel="alternate" hreflang="fr-FR">
+                            <img src="/public/icon/32px/fr_flag.svg" alt="French flag">French</a>
+                    </li>
+                </ul>
+            </div>
 
-
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href="director.html">Steven Spielberg</a></li>
-                <li><a href="film.html">Jurassic Park</a></li>
-                <li><a href="book.html">The Science of Jurassic Park</a></li>
-                <li><a href="music.html"></a></li>
-                <li><a href="composer"></a></li>
-                <li><a href="paleoart.html"></a></li>
-            </ul>
-        </nav>
-
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/1-characterline.html">"Life always
+                            finds a way"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/2-director.html">Steven Spielberg</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/3-movie.html">Jurassic Park</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/4-book.html">The Science of Jurassic
+                            Park</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/5-music.html">An enigmatic, menacing
+                            melody...</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/6-composer.html">John Williams</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/7-palaeoart.html">Paleoart?<img
+                                src="/public/icon/32px/paleoart.svg"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/8-contactform.html">Contact<img
+                                src="/public/icon/32px/mail.svg"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/9-about.html">About<img
+                                src="/public/icon/32px/about.svg"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-otherprojects.html">Other
+                            projects<img src="/public/icon/32px/book.svg"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/11-glossary.html">Glossary<img
+                                src="/public/icon/32px/glossary.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>
 
-        </h1>
+    <main>
+        <section></section>
+        <div></div>
+
+        <video src="/public/video/jurassic_park_line.gif" alt="Ian Malcolm line">
+
+            <h1>
+            </h1>
 
     </main>
     <footer></footer>
