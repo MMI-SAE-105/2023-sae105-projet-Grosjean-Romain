@@ -8,7 +8,6 @@ Sommaire :
     4. Variables (Utils)
     5. Libraries (Vendors)
     6. Polices (Fonts)
-    7. JavaScript (JS)
 */
 
 /* Base */
@@ -38,7 +37,3 @@ Sommaire :
 /* Fonts */
 
 @import url("");
-
-/* JS */
-
-@import "/src/js/gotoheader.js";

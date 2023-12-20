@@ -33,16 +33,19 @@ Sommaire :
     --font-small-uppercase: 'Gadugi', sans-serif, uppercase;
   
     /* Tailles de police de caractère */
-    --title-main: rem;
-    --title-xl: rem;
-    --text-xxl: rem;
-    --text-xl: rem;
-    --text-md: rem;
-    --text-sm: rem;
-    --text-xs: rem;
+    --title-main: 2rem;
+    --title-xxl: 1.8rem;
+    --title-xl: 1.6rem;
+    --title-md: 1.4rem;
+    --title-sm: 1.5rem;
+    --text-xxl: 1.2rem;
+    --text-xl: 1rem;
+    --text-md: 0.875rem;
+    --text-sm: 0.75rem;
+    --text-xs: 0.625rem;
 
     /* Font variantes */
-    --letter-spacing: rem;
+    --letter-spacing: 1.7rem;
 
     /* Espacements */
     --space1x: 8px;

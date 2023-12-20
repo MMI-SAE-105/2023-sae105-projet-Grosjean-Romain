@@ -2,5 +2,106 @@
 
 Sommaire :
 
-    1.    
+    1. Cards
+    2. Contenus des Cards
+    3. Colorimétrie des Cards sur les Articles
+    4. Colorimétrie du Card sur le Paléoart
+    5. Réglages images des Cards
+    6. Contenus textuels des Cards
+    7. Icônes des Cards
 */
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 2.8vh;
+    grid-gap: 5.5vh;
+}
+
+.card {
+    background-color: var(--);
+    border-radius: 1.8vh;
+    box-shadow: 0vh 0vh 1.8vh var(--black-1);
+}
+
+/* Contenus des Cards */
+
+.card__content {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card__content:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.8vh 1.8vh 0 0;
+    opacity: 0.7;
+}
+
+/* Colorimétrie des Cards sur les Articles */
+
+.card__article>.card__content:after {
+    background-image: linear-gradient(180deg,
+            var(--brand-green-light),
+            var(--brand-green-simple));
+    z-index: 1;
+}
+
+/* Colorimétrie du Card sur le Paléoart */
+
+.card__special>.card__content:after {
+    background-image: linear-gradient(180deg,
+            var(--brand-blue-dark),
+            var(--brand-magenta));
+    z-index: 1;
+}
+
+/* Réglages images des Cards */
+
+.card__image {
+    border-radius: 1.8vh 1.8vh 0vh 0vh;
+    display: block;
+    width: 100%;
+}
+
+/* Contenus textuels des Cards */
+
+.card__text {
+    padding: 2.8vh 2vh;
+}
+
+.card__text>h3 {
+    color: var(--black-1);
+    font-size: var(--title-xl);
+    margin: 1.4vh 0vh 2.1vh 0vh;
+}
+
+.card__text>p {
+    color: var(--black-2);
+    font-size: var(--text-xl);
+    line-height: var(--letter-spacing);
+}
+
+/* Icônes des Cards */
+
+.card__size-up {
+    position: absolute;
+    width: 4vh;
+    top: 2.5%;
+    right: 2.5%;
+    z-index: 2;
+}
+
+.card__flower-link {
+    position: absolute;
+    width: 6vh;
+    bottom: 5%;
+    left: 2.5%;
+    z-index: 2;
+}

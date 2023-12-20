@@ -13,6 +13,8 @@ Sommaire :
 *,
 *:before,
 *:after {
+    padding: 0;
+        margin: 0;
     box-sizing: border-box;
 }
 
@@ -33,7 +35,7 @@ button {
 /* Règles typographiques générales */
 
 body {
-    
+    background-color: var(--white);
 }
 
 h1 {

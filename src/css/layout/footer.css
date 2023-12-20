@@ -2,12 +2,9 @@
 
 Sommaire :
 
-    1. footer
-    2. footer a
-    3. footer__iconSocial
-    4. footer__list
-    5. footer__title
-    6. footer__address
-    7. footer__logoLFAW
+    1. 
 */
 
+.footer__middle__arrow {
+    cursor: pointer;
+}
