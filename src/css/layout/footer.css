@@ -2,9 +2,53 @@
 
 Sommaire :
 
-    1. 
+    1. Règles d'ensemble
+    2. Début du Footer
+    3. Milieu du Footer
+    4. Partie Réseau du Footer
+    5. Fin du Footer
 */
+
+/* 1. Règles d'ensemble */
+
+footer {}
+
+.footer__list {}
+
+.footer__title {}
+
+.footer__icon {}
+
+/* 2. Début du Footer */
+
+.footer__begin {}
+
+footer__menu {}
+
+/* 3. Milieu du Footer */
+
+.footer__middle {}
 
 .footer__middle__arrow {
     cursor: pointer;
 }
+
+.footer__middle__signature {}
+
+/* 4. Partie Réseau du Footer */
+
+.footer__social {}
+
+.footer__iconSocial {}
+
+/* 5. Fin du Footer */
+
+.footer__end {}
+
+.footer__address {}
+
+.footer__logo__mmi {}
+
+.footer__host {}
+
+.footer__host-link {}

@@ -11,7 +11,7 @@ Sommaire :
     7. Icônes des Cards
 */
 
-/* Cards */
+/* 1. Cards */
 
 .cards {
     display: grid;
@@ -26,7 +26,7 @@ Sommaire :
     box-shadow: 0vh 0vh 1.8vh var(--black-1);
 }
 
-/* Contenus des Cards */
+/* 2. Contenus des Cards */
 
 .card__content {
     position: relative;
@@ -44,7 +44,7 @@ Sommaire :
     opacity: 0.7;
 }
 
-/* Colorimétrie des Cards sur les Articles */
+/* 3. Colorimétrie des Cards sur les Articles */
 
 .card__article>.card__content:after {
     background-image: linear-gradient(180deg,
@@ -53,7 +53,7 @@ Sommaire :
     z-index: 1;
 }
 
-/* Colorimétrie du Card sur le Paléoart */
+/* 4. Colorimétrie du Card sur le Paléoart */
 
 .card__special>.card__content:after {
     background-image: linear-gradient(180deg,
@@ -62,7 +62,7 @@ Sommaire :
     z-index: 1;
 }
 
-/* Réglages images des Cards */
+/* 5. Réglages images des Cards */
 
 .card__image {
     border-radius: 1.8vh 1.8vh 0vh 0vh;
@@ -70,7 +70,7 @@ Sommaire :
     width: 100%;
 }
 
-/* Contenus textuels des Cards */
+/* 6. Contenus textuels des Cards */
 
 .card__text {
     padding: 2.8vh 2vh;
@@ -88,7 +88,7 @@ Sommaire :
     line-height: var(--letter-spacing);
 }
 
-/* Icônes des Cards */
+/* 7. Icônes des Cards */
 
 .card__size-up {
     position: absolute;
