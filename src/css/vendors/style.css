@@ -17,14 +17,18 @@ Sommaire :
 
 /* Components */
 
-@import "/src/css/components/menu.css";
+@import "/src/css/components/annex.css";
+@import "/src/css/components/btn.css";
 @import "/src/css/components/card.css";
+@import "/src/css/components/carrousel.css";
+@import "/src/css/components/form.css";
+@import "/src/css/components/menu.css";
+@import "/src/css/components/top.css";
 
 /* Layout */
 
 @import "/src/css/layout/header.css";
 @import "/src/css/layout/footer.css";
-@import "/src/css/layout/section.css";
 
 /* Utils */
 

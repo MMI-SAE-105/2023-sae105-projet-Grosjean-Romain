@@ -11,17 +11,36 @@ Sommaire :
 
 /* 1. Règles d'ensemble */
 
-footer {}
+.footer {
+    background-color: var(--);
+    padding: var(--) var(--);
+    display: flex;
+    flex-direction: column;
+    gap: var(--);
+}
 
-.footer__list {}
+.footer__list {
+    display: block;
+    gap: var(--);
+}
 
-.footer__title {}
+.footer__title {
+    margin-top: var(--);
+    text-transform: uppercase;
+    font-size: var(--);
+    letter-spacing: var(--);
+    color: var(--);
+}
 
 .footer__icon {}
 
 /* 2. Début du Footer */
 
 .footer__begin {}
+
+.footer__logo {
+    cursor: pointer;
+}
 
 footer__menu {}
 
@@ -37,9 +56,13 @@ footer__menu {}
 
 /* 4. Partie Réseau du Footer */
 
-.footer__social {}
+.footer__social {
+    display: flex;
+}
 
-.footer__iconSocial {}
+.footer__iconSocial {
+    width: ;
+}
 
 /* 5. Fin du Footer */
 

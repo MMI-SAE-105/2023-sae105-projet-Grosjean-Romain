@@ -1,0 +1,62 @@
+/* Composant - Haut de page
+
+Sommaire :
+
+    1.   
+*/
+
+/* 1. Présentation des pages générales (articles, paramètres, contact, etc) */
+
+.top {}
+
+.top__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.top__big-title {
+    font-family: var(--);
+    text-transform: uppercase;
+    letter-spacing: var(--);
+    font-size: var(--);
+}
+
+.top__title {
+    font-family: var(--);
+    text-transform: uppercase;
+    letter-spacing: var(--);
+    font-size: var(--);
+}
+
+.top__sub-title {
+    font-family: var(--);
+    text-transform: uppercase;
+    letter-spacing: var(--);
+    font-size: var(--);
+}
+
+.top__chapo {
+    min-height: vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 2. Présentation Homepage/Accueil */
+
+.top-home {}
+
+.top-home__text {}
+
+.top-home__quote__gif {
+    position: ;
+    ;
+}
+
+.top-home__quote__container {}
+
+.top-home__quote__text {}
+
+.top-home__quote__text__color {
+    color: var(--brand-green-light);
+}

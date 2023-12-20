@@ -90,12 +90,17 @@ Sommaire :
 
 /* 7. Icônes des Cards */
 
-.card__size-up {
+.card__size-up-icon {
     position: absolute;
     width: 4vh;
     top: 2.5%;
     right: 2.5%;
     z-index: 2;
+}
+
+.card__size-up-icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 .card__flower-link {
@@ -105,3 +110,11 @@ Sommaire :
     left: 2.5%;
     z-index: 2;
 }
+
+.card__flower-link:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* 8.  */
+
