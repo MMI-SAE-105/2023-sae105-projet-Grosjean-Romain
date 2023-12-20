@@ -7,31 +7,38 @@ Sommaire :
     3. Règles de composition (Layout)
     4. Variables (Utils)
     5. Libraries (Vendors)
-    6. Polices Google Font
+    6. Polices (Fonts)
+    7. JavaScript (JS)
 */
 
 /* Base */
 
-@import "base/main.css";
-@import "base/media.css";
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
 
 /* Components */
 
-@import "components/menu.css";
+@import "/src/css/components/menu.css";
+@import "/src/css/components/card.css";
 
 /* Layout */
 
-@import "layout/header.css";
-@import "layout/footer.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+@import "/src/css/layout/section.css";
 
 /* Utils */
 
-@import "utils/variables.css";
+@import "/src/css/utils/variables.css";
 
 /* Vendors */
 
-@import "vendors/normalize.css";
+@import "/src/css/vendors/normalize.css";
 
+/* Fonts */
 
-/* Polices Google Font */
 @import url("");
+
+/* JS */
+
+@import "/src/js/gotoheader.js";

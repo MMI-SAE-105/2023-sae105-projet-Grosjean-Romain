@@ -11,11 +11,11 @@ Sommaire :
 
 :root {
     /* Styles de l'harmonie colorée */
-    --brand-turquoise: #72998A;
-    --brand-green-dark: #37462A;
-    --brand-green-light: #809852;
-    --brand-beige-dark: #C9B5A5;
-    --brand-beige-light: #D8C4B3;
+    --brand-green-dark: #264F42;
+    --brand-green-simple: #729B4E;
+    --brand-green-light: #50A37D;
+    --brand-blue-dark: #3E516B;
+    --brand-magenta: #A358A2;
     --black-1: #1B1B1B;
     --black-2: #383838;
     --grey-1: #C6C6C6;

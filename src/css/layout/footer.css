@@ -11,31 +11,3 @@ Sommaire :
     7. footer__logoLFAW
 */
 
-.footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer__iconSocial {
-
-}
-
-.footer__list {
-    display: flex;
-}
-
-.footer__title {
-    text-transform: uppercase;
-}
-
-.footer__address {
-   
-}
-
-.footer__logoLFAW {
- 
-}
