@@ -46,20 +46,41 @@ Sommaire :
 
 /* 3. Colorimétrie des Cards sur les Articles */
 
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
 .card__article>.card__content:after {
     background-image: linear-gradient(180deg,
             var(--brand-green-light),
             var(--brand-green-simple));
     z-index: 1;
+    transition: background-image 0.3s ease;
+
+}
+
+.card__article:hover>.card__content:after {
+    background-image: none;
 }
 
 /* 4. Colorimétrie du Card sur le Paléoart */
+
+.card__special {
+    position: relative;
+    overflow: hidden;
+}
 
 .card__special>.card__content:after {
     background-image: linear-gradient(180deg,
             var(--brand-blue-dark),
             var(--brand-magenta));
     z-index: 1;
+    transition: background-image 0.3s ease;
+}
+
+.card__special:hover>.card__content:after {
+    background-image: none;
 }
 
 /* 5. Réglages images des Cards */
@@ -101,6 +122,7 @@ Sommaire :
 .card__size-up-icon:hover {
     transform: scale(1.15);
     cursor: pointer;
+    transform-origin: center center;
 }
 
 .card__flower-link {
@@ -114,7 +136,11 @@ Sommaire :
 .card__flower-link:hover {
     transform: scale(1.15);
     cursor: pointer;
+    transform-origin: center center;
 }
 
-/* 8.  */
+/* 8. Aggrandissement et Rapetissement des images */
 
+.card__large-image {
+    
+}
