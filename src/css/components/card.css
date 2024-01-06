@@ -11,6 +11,23 @@ Sommaire :
     7. Icônes des Cards
 */
 
+#card__fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+}
+
+#card__fixed button {
+    color: var(--black-1);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
 /* 1. Cards */
 
 .cards {
