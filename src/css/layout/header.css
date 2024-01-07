@@ -5,14 +5,50 @@ Sommaire :
     1. 
 */
 
-.header {}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brand-blue-dark);
+    transition: background-color 0.3s ease;
+}
 
-.header--atTop .header__begin {}
+.header--atTop {
+    background-color: transparent;
+}
 
-.header__logo .header__end {}
+.header__begin {}
 
-.header__language-button {}
+.header__logo {
+    width: 27vh;
+    margin-right: var(--space3x);
+    transition: all 0.3s ease;
+}
 
-.header__menu{}
+.header__end {
+    display: flex;
+    gap: var(--space2x);
+    align-items: center;
+}
 
-.header__menu-btn {}
+.header__language-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.header__menu {}
+
+.header__menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

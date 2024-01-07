@@ -2,13 +2,91 @@
 
 Sommaire :
 
-    1.    
+    1. Menu base
+    2. Menu Btn
+    3. Menu content
 */
 
-.menu-btn__bar {}
+/* Menu base */
 
-.menu__list {}
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    inset: 0;
+    background-color: var(--brand-green-dark);
+    font-size: var(--text-xl);
+    letter-spacing: var(--letter-spacing);
+    transition: all 0.4s ease-in-out;
+}
 
-.menu__item {}
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+}
 
-.menu__link {}
+/* Menu Btn */
+
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    background-color: var(--white);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
+
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    background-color: var(--);
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/* Menu content */
+
+.menu__list {
+    margin-top: 25vh;
+    margin-left: 15vw;
+}
+
+.menu__item {
+    margin-top: 15%;
+}
+
+.menu__link {
+    color: var(--brand-green-simple);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 5vh;
+    transition: color 0.3s ease;
+}
+
+.menu__link:hover {
+    color: var(--brand-green-light);
+}

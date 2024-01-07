@@ -2,15 +2,62 @@
 
 Sommaire :
 
-    1.   
+    1. Annexe
 */
 
-/* 1.  */
+/* Annexe */
 
-.annex {}
+.annex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.annex__content {}
+.annex__content-1 {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-left: var(--space10x);
+    padding-right: var(--space10x);
+    padding-bottom: var(--space10x);
+    padding-top: var(--space5x);
+    box-sizing: border-box;
+}
 
-.annex__image {}
+.annex__content-2 {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-left: var(--space10x);
+    padding-right: var(--space10x);
+    padding-bottom: var(--space10x);
+    box-sizing: border-box;
+}
 
-.annex__text {}
+.annex__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.8vh;
+    transition: transform 0.25s ease-in-out;
+}
+
+.annex__image:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.annex__text {
+    color: var(--brand-magenta);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    margin-top: var(--space2x);
+}

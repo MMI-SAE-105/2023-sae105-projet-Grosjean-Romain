@@ -36,6 +36,7 @@ button {
 /* Règles typographiques générales */
 
 body {
+   
     background-color: var(--white);
 }
 
@@ -51,7 +52,7 @@ p {}
     color: var(--system-1);
     font-weight: bold;
     text-decoration: none;
-    }
+}
 
 .green-value {
     color: var(--brand-green-light);
@@ -61,4 +62,7 @@ p {}
 
 /* Classes utilitaires */
 
-.list-unstyled {}
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
