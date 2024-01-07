@@ -4,11 +4,12 @@ Sommaire :
 
     1. Cards
     2. Contenus des Cards
-    3. Colorimétrie des Cards sur les Articles
-    4. Colorimétrie du Card sur le Paléoart
-    5. Réglages images des Cards
-    6. Contenus textuels des Cards
-    7. Icônes des Cards
+    3. Cards sur les Articles
+    4. Card sur le Paléoart
+    5. Cards des Autres Projets
+    6. Réglages images des Cards
+    7. Contenus textuels des Cards
+    8. Icônes des Cards
 */
 
 #card__fixed {
@@ -18,14 +19,7 @@ Sommaire :
     display: none;
     justify-content: center;
     align-items: center;
-    background: var(--white);
-}
-
-#card__fixed button {
-    color: var(--black-1);
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    background: var(--brand-green-light);
 }
 
 /* 1. Cards */
@@ -38,7 +32,7 @@ Sommaire :
 }
 
 .card {
-    background-color: var(--);
+    background-color: var(--white);
     border-radius: 1.8vh;
     box-shadow: 0vh 0vh 1.8vh var(--black-1);
 }
@@ -61,7 +55,7 @@ Sommaire :
     opacity: 0.7;
 }
 
-/* 3. Colorimétrie des Cards sur les Articles */
+/* 3. Cards sur les Articles */
 
 .card__article {
     position: relative;
@@ -74,14 +68,13 @@ Sommaire :
             var(--brand-green-simple));
     z-index: 1;
     transition: background-image 0.3s ease;
-
 }
 
 .card__article:hover>.card__content:after {
     background-image: none;
 }
 
-/* 4. Colorimétrie du Card sur le Paléoart */
+/* 4. Card sur le Paléoart */
 
 .card__special {
     position: relative;
@@ -100,7 +93,26 @@ Sommaire :
     background-image: none;
 }
 
-/* 5. Réglages images des Cards */
+/* 5. Cards des Autres Projets */
+
+.card__projects {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__projects>.card__content:after {
+    background-image: linear-gradient(180deg,
+            var(--brand-magenta),
+            var(--system-1));
+    z-index: 1;
+    transition: background-image 0.3s ease;
+}
+
+.card__projects:hover>.card__content:after {
+    background-image: none;
+}
+
+/* 6. Réglages images des Cards */
 
 .card__image {
     border-radius: 1.8vh 1.8vh 0vh 0vh;
@@ -108,7 +120,7 @@ Sommaire :
     width: 100%;
 }
 
-/* 6. Contenus textuels des Cards */
+/* 7. Contenus textuels des Cards */
 
 .card__text {
     padding: 2.8vh 2vh;
@@ -126,7 +138,7 @@ Sommaire :
     line-height: var(--letter-spacing);
 }
 
-/* 7. Icônes des Cards */
+/* 8. Icônes des Cards */
 
 .card__size-up-icon {
     position: absolute;
@@ -137,6 +149,20 @@ Sommaire :
 }
 
 .card__size-up-icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+.card__size-down-icon {
+    position: absolute;
+    width: 4vh;
+    top: 2%;
+    right: 1.5%;
+    z-index: 2;
+}
+
+.card__size-down-icon:hover {
     transform: scale(1.15);
     cursor: pointer;
     transform-origin: center center;
