@@ -4,19 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Finds A Way Website">
     <title>Contact ｜ LFAW</title>
+    <link rel="icon" href="/public/icon/logos/logo_main.svg">
     <link rel="stylesheet" href="/src/css/vendors/style.css">
     <link rel="alternate" hreflang="en" href="/pages/en/8-contactform.html">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script type="module" src="/src/js/style.js"></script>
+    <script src="/src/js/image.js"></script>
 </head>
 
 <body>
+    <main>
+        <div>
+            <div>
+                <h1>
+                    Contact
+                </h1>
+            </div>
+            <form class="form" action="/submit_contact" method="post">
+                <p>
+                    <label class="formulaire_nom" for="prenom">Last name:</label><br>
+                    <input class="nomtext" type="text" id="prenom" name="prenom" value="ex: Romain"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="nom">First name:</label><br>
+                    <input class="nomtext" type="text" id="nom" name="nom" value="ex: Grosjean"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="email">Email:</label><br>
+                    <input class="nom__text" type="email" id="email" name="email" value="exemple@gmail.com"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="message">Message:</label><br>
+                    <textarea id="message" name="message">Write something...</textarea><br>
+                </p>
+                <p>
+                    <input class="formulaire_btn" type="submit" value="Send">
+                </p>
+            </form>
+        </div>
 
-    *By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.
-
-    I agree to receive communications from “<span class="green-value">Life Finds A Way</span>”.
-
-    I consent to the storage of my information in accordance with the <b>Privacy Policy</b>.
+        <div>
+            <h3>*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
+            <div x-data="{ agreement1: false, agreement2: false }">
+                <div>
+                    <button @click="agreement1 = !agreement1">
+                        <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
+                            alt="Button checkbox empty">
+                        <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
+                            alt="Button checkbox fill">
+                    </button>
+                    <h4>I agree to receive communications from “<span class="green-value">Life Finds A
+                            Way</span>”.</h4>
+                </div>
+                <div>
+                    <button @click="agreement2 = !agreement2">
+                        <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
+                            alt="Button checkbox empty">
+                        <img x-show="agreement2" src="/public/icon/larger+/checkbox_fill.svg"
+                            alt="Button checkbox fill">
+                    </button>
+                    <h4>I consent to the storage of my information in accordance with the <b>Privacy Policy</b>.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
+
+</html>
 
 </html>

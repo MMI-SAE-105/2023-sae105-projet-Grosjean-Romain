@@ -2,5 +2,57 @@
 
 Sommaire :
 
-    1.    
+        1. form
+        2. label
+        3. input, textarea
+        4. input[type="submit"]
+        5. input[type="submit"]:hover
 */
+
+form {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2vw;
+    border-radius: 1.8vh;
+    box-shadow: 0 0 1vh var(--grey-1);
+    padding-left: var(--space5x);
+    padding-right: var(--space5x);
+    padding-bottom: var(--space5x);
+    padding-top: var(--space1x);
+}
+
+label {
+    display: block;
+    margin-top: 2.5vh;
+    font-weight: bold;
+    color: var(--brand-green-dark);
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+    box-sizing: border-box;
+    border: 0.1vw solid var(--grey-1);
+    border-radius: 0.6vh;
+    font-size: 1.4vw;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: var(--brand-green-dark);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+    padding: 2vw;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--brand-green-light);
+}

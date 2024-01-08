@@ -36,7 +36,7 @@ button {
 /* Règles typographiques générales */
 
 body {
-   
+    line-height: 1.6;
     background-color: var(--white);
 }
 
@@ -45,6 +45,8 @@ h1 {}
 h2 {}
 
 h3 {}
+
+h4 {}
 
 p {}
 

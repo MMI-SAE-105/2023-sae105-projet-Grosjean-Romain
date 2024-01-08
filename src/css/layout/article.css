@@ -79,10 +79,10 @@ Sommaire :
     padding-bottom: var(--space10x);
     box-sizing: border-box;
     -webkit-transition: transform 0.25s ease-in-out;
-        -moz-transition: transform 0.25s ease-in-out;
-        -o-transition: transform 0.25s ease-in-out;
-        -ms-transition: transform 0.25s ease-in-out;
-        transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
 }
 
 .article__video-contener-1:hover {
@@ -92,7 +92,7 @@ Sommaire :
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: transform 0.25s ease-in-out;
-    transition: transform 0.25s 
+    transition: transform 0.25s
 }
 
 .article__video-contener-2:hover {
