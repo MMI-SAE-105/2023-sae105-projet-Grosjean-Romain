@@ -27,6 +27,7 @@ label {
     font-weight: bold;
     color: var(--brand-green-dark);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 input,
@@ -51,8 +52,9 @@ input[type="submit"] {
     border: none;
     transition: background-color 0.2s;
     padding: 2vw;
+    text-transform: uppercase;
 }
 
 input[type="submit"]:hover {
-    background-color: var(--brand-green-light);
+        background-color: var(--brand-green-light);
 }

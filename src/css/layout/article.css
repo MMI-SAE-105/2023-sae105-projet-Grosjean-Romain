@@ -3,6 +3,8 @@
 Sommaire :
 
     1. Article Images
+    2. Article Vidéos
+    3. Article Textes
 */
 
 /* Article Images */
@@ -103,3 +105,6 @@ Sommaire :
     transform: scale(1.05);
     transition: transform 0.25s ease-in-out;
 }
+
+/* Article Textes */
+

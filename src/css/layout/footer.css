@@ -12,8 +12,10 @@ Sommaire :
 /* 1. Règles d'ensemble */
 
 .footer {
-    background-color: var(--);
-    padding: var(--) var(--);
+    background-color: var(--black-1);
+    position: relative;
+    color: var(--white);
+    padding: var(--space1x) var(--space5x);
     display: flex;
     flex-direction: column;
     gap: var(--);
@@ -21,18 +23,27 @@ Sommaire :
 
 .footer__list {
     display: block;
-    gap: var(--);
+    list-style: none;
+    gap: var(--space1x);
+    padding: 0;
+    margin: 0;
 }
 
 .footer__title {
+    padding-top: 25px;
     margin-top: 0;
     text-transform: uppercase;
-    font-size: var(--);
-    letter-spacing: var(--);
-    color: var(--);
+    letter-spacing: var(--letterSpacing);
+    color: var(--white);
 }
 
-.footer__icon {}
+.footer__icon {
+    vertical-align: middle;
+    color: var(--white);
+    width: 2em;
+    height: auto;
+    margin-top: 2.5vh;
+}
 
 /* 2. Début du Footer */
 
@@ -42,36 +53,107 @@ Sommaire :
     cursor: pointer;
 }
 
-footer__menu {}
+.footer__menu {}
+
+.footer__menu .footer__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 /* 3. Milieu du Footer */
 
-.footer__middle {}
+.footer__middle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75%;
+    gap: 1vh;
+}
+
+.footer__middle__arrow,
+.footer__middle__signature {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .footer__middle__arrow {
     cursor: pointer;
+    padding-bottom: 300px;
+    width: 17vw;
+    height: auto;
+    order: 1;
 }
 
-.footer__middle__signature {}
+.footer__middle__signature {
+    color: var(--brand-green-light);
+    width: 12.5vw;
+    padding-top: 200px;
+    height: auto;
+    order: 2;
+    margin-top: 1vh;
+}
 
 /* 4. Partie Réseau du Footer */
 
 .footer__social {
+    display: block;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.footer__list__social {
     display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    list-style: none;
+    padding-top: 10px;
+    margin: 0;
 }
 
 .footer__iconSocial {
-    width: ;
+    width: 3.5vh;
+    height: auto;
 }
 
 /* 5. Fin du Footer */
 
-.footer__end {}
+.footer__end {
+    color: var(--grey-1);
+}
 
-.footer__address {}
+.footer__address {
+    color: var(--grey-1);
+    text-decoration: none;
 
-.footer__logo__mmi {}
+}
 
-.footer__host {}
+.footer__logo__mmi {
+    position: relative;
+    width: 22%;
+    margin-left: 77.5%;
+}
 
-.footer__host-link {}
+.footer__end__text {
+    color: var(--grey-1);
+    text-decoration: none;
+}
+
+.footer__host {
+    color: var(--brand-green-light);
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+
+}
+
+.footer__host-link {
+    color: var(--brand-green-light);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
