@@ -111,3 +111,9 @@ Sommaire :
 .article__text__alinea {
     text-indent: 30%;
 }
+
+.article-intro,
+.article-details {
+    margin-left: 20px;
+    margin-right: 20px;
+}

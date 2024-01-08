@@ -2,44 +2,47 @@
 
 Sommaire :
 
-    1.   
+    1.  Présentation des pages générales (articles, paramètres, contact, etc)
+    2.  Présentation Homepage/Accueil
 */
 
 /* 1. Présentation des pages générales (articles, paramètres, contact, etc) */
 
-.top {}
+.top {
+    position: relative;
+    overflow: hidden;
+}
 
 .top__img {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
     z-index: -1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .top__big-title {
-    font-family: var(--);
+    left: 35%;
+    top: 350px;
     text-transform: uppercase;
-    letter-spacing: var(--);
-    font-size: var(--);
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-50%);
+    color: var(--white);
 }
 
-.top__title {
-    font-family: var(--);
-    text-transform: uppercase;
-    letter-spacing: var(--);
-    font-size: var(--);
-}
+.top__title {}
 
-.top__sub-title {
-    font-family: var(--);
-    text-transform: uppercase;
-    letter-spacing: var(--);
-    font-size: var(--);
-}
+.top__sub-title {}
 
 .top__chapo {
-    min-height: vh;
+    min-height: 20svh;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 /* 2. Présentation Homepage/Accueil */
@@ -52,26 +55,29 @@ Sommaire :
     margin: 50px;
     margin-top: 175px;
     overflow: hidden;
+    border-radius: 1.8vh;
 }
 
 .top-home__text-all {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .top-home__text-1 {
     max-width: 100%;
     padding: 0 10px;
     margin-top: 50px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .top-home__text-2 {
     max-width: 100%;
     padding: 0 10px;
     margin-top: 50px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .top-home__quote__gif {
@@ -80,7 +86,26 @@ Sommaire :
     max-width: 100%;
 }
 
-.top-home__quote__container {}
+.top-home__quote__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chevron__left,
+.chevron__right {
+    margin: 0 10px;
+}
+
+.chevron__left {
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+.chevron__right {
+    margin-top: 25px;
+    margin-left: 10px;
+}
 
 .top-home__quote__text {
     text-align: center;
@@ -91,16 +116,17 @@ Sommaire :
 }
 
 .fern__gen {
-    position: relative;
-    top: -20vh;
-    left: 0;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     pointer-events: none;
-
+    z-index: -1;
 }
 
 .fern__gen img {
@@ -111,11 +137,3 @@ Sommaire :
 .fern__gen-right {
     width: 30vw;
 }
-
-.fern__gen-signature {
-    color: var(--brand-green-light);
-    width: 12.5vw;
-    height: auto;
-    
-}
-
