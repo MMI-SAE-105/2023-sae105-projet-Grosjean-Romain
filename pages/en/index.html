@@ -15,7 +15,7 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body x-data="{ atTop: true }">
+<body x-data="{ atTop: true }" id="top" class="top">
     <header class="header" @scroll.window="atTop = ( window.scrollY > 500 ? false : true )"
         :class="{ 'header--atTop' : }">
         <div class="header__begin">
@@ -81,21 +81,27 @@
             <img class="top-home__quote__gif" src="/public/img/0-home/jurassic_park_line.gif" alt="Ian Malcolm line">
             <div>
                 <blockquote class="top-home__quote__container">
+                    <img src="" alt="">
                     <h1 class="top-home__quote__text">No. I'm, I'm simply saying that <span
                             class="top-home__quote__text__color">life</span>, uh… <span
                             class="top-home__quote__text__color">finds
                             a
                             way</span>.</h1>
                 </blockquote>
-                <h2 class="top-home__text">Welcome to “Life finds a way”, a website inspired by an iconic line
-                    from
-                    the Jurassic Park film.
-                    Enter a niche
-                    world centred around the franchise, dinosaurs and palaeoart!</h2>
-                <figure>
-                    <img src="/public/icon/larger+/fern_home_left.svg" alt="Flower pattern left">
-                    <img src="/public/icon/logos/signature.svg" alt="Signature">
-                    <img src="/public/icon/larger+/fern_home_right.svg" alt="Flower pattern right">
+                <div class="top-home__text-all">
+                    <h2 class="top-home__text-1">Welcome to “Life finds a way”, a website inspired by an iconic line
+                        from
+                        the Jurassic Park film.
+                    </h2>
+                    <h2 class="top-home__text-2">
+                        Enter a niche
+                        world centred around the franchise, dinosaurs and palaeoart!</h2>
+                </div>
+                <figure class="fern__gen">
+                    <img class="fern__gen-left" src="/public/icon/larger+/fern_home_left.svg" alt="Flower pattern left">
+                    <img class="fern__gen-signature" src="/public/icon/logos/signature.svg" alt="Signature">
+                    <img class="fern__gen-right" src="/public/icon/larger+/fern_home_right.svg"
+                        alt="Flower pattern right">
                 </figure>
             </div>
         </div>
@@ -344,7 +350,8 @@
 
         <div>
             <h3 class="footer__title">LEGAL NOTICE</h3>
-            <p class="footer__end__text">Project carried out as part of an educational exercise at the BUT MMI department in Montbéliard -
+            <p class="footer__end__text">Project carried out as part of an educational exercise at the BUT MMI
+                department in Montbéliard -
                 2023-2024</p>
             <h3 class="footer__host">*Host: <a class="footer__host-link" href="https://www.infomaniak.com"
                     target="_blank">Infomaniak</a></h3>

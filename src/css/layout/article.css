@@ -108,3 +108,6 @@ Sommaire :
 
 /* Article Textes */
 
+.article__text__alinea {
+    text-indent: 30%;
+}

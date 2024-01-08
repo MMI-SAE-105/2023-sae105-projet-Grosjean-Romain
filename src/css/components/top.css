@@ -44,19 +44,78 @@ Sommaire :
 
 /* 2. Présentation Homepage/Accueil */
 
-.top-home {}
+.top-home {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 175px;
+    overflow: hidden;
+}
 
-.top-home__text {}
+.top-home__text-all {
+    text-align: center;
+}
+
+.top-home__text-1 {
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.top-home__text-2 {
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
 
 .top-home__quote__gif {
-    position: ;
-    ;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .top-home__quote__container {}
 
-.top-home__quote__text {}
+.top-home__quote__text {
+    text-align: center;
+}
 
 .top-home__quote__text__color {
     color: var(--brand-green-light);
 }
+
+.fern__gen {
+    position: relative;
+    top: -20vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+
+}
+
+.fern__gen img {
+    max-height: 100%;
+}
+
+.fern__gen-left,
+.fern__gen-right {
+    width: 30vw;
+}
+
+.fern__gen-signature {
+    color: var(--brand-green-light);
+    width: 12.5vw;
+    height: auto;
+    
+}
+

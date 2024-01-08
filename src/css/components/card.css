@@ -141,6 +141,11 @@ Sommaire :
 /* 8. Icônes des Cards */
 
 .card__size-up-icon {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     position: absolute;
     width: 4vh;
     top: 2.5%;
@@ -150,11 +155,21 @@ Sommaire :
 
 .card__size-up-icon:hover {
     transform: scale(1.15);
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     cursor: pointer;
     transform-origin: center center;
 }
 
 .card__size-down-icon {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     position: absolute;
     width: 4vh;
     top: 2%;
@@ -163,12 +178,22 @@ Sommaire :
 }
 
 .card__size-down-icon:hover {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     transform: scale(1.15);
     cursor: pointer;
     transform-origin: center center;
 }
 
 .card__flower-link {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     position: absolute;
     width: 6vh;
     bottom: 5%;
@@ -177,6 +202,11 @@ Sommaire :
 }
 
 .card__flower-link:hover {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     transform: scale(1.15);
     cursor: pointer;
     transform-origin: center center;
