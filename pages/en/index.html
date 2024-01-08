@@ -17,7 +17,7 @@
 
 <body x-data="{ atTop: true }" id="top" class="top">
     <header class="header" @scroll.window="atTop = ( window.scrollY > 500 ? false : true )"
-        :class="{ 'header--atTop' : }">
+        :class="{ 'header--atTop' : !atTop}">
         <div class="header__begin">
             <a href="/pages/en/index.html">
                 <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
