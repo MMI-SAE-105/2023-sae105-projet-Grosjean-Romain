@@ -35,11 +35,8 @@ Sommaire :
 /* Utils */
 
 @import "/src/css/utils/variables.css";
+@import "/src/css/utils/fonts.css";
 
 /* Vendors */
 
 @import "/src/css/vendors/normalize.css";
-
-/* Fonts */
-
-@import url("");

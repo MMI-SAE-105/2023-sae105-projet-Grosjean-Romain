@@ -129,7 +129,17 @@ Sommaire :
 .card__text>h3 {
     color: var(--black-1);
     font-size: var(--title-xl);
+    color: var(--brand-green-light);
+    font-family: var(--font-small-uppercase);
     margin: 1.4vh 0vh 2.1vh 0vh;
+}
+
+.card__special .card__text>h3.special-color {
+    color: var(--brand-magenta);
+}
+
+.card__projects .card__text>h3.projects-color {
+    color: var(--system-1);
 }
 
 .card__text>p {

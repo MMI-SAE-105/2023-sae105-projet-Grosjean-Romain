@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('/src/fonts/futura/futura\ medium\ bt.ttf') format ('truetype');
+    src: url('/src/fonts/futura/Futura\ Medium\ Italic\ font.ttf') format (' truetype');
+    src: url('/src/fonts/futura/futura\ medium\ condensed\ bt.ttf') format (' truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('/src/fonts/lucida-sans-cufonfonts/l_10646.ttf') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LSANS.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LSANSD.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LSANSDI.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LSANSI.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LTYPE.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LTYPEB.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LTYPEBO.TTF') format (' truetype');
+    src: url('/src/fonts/lucida-sans-cufonfonts/LTYPEO.TTF') format (' truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gadugi';
+    src: url('/src/fonts/Gadugi-Font-Family/Gadugi-Font-Family/gadugi-bold.ttf') format (' truetype');
+    src: url('/src/fonts/Gadugi-Font-Family/Gadugi-Font-Family/gadugi-gras.ttf') format (' truetype');
+    src: url('/src/fonts/Gadugi-Font-Family/Gadugi-Font-Family/gadugi-normal.ttf') format (' truetype');
+    font-weight: normal;
+}

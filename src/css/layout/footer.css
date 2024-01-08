@@ -35,6 +35,9 @@ Sommaire :
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing);
     color: var(--white);
+    font-family: var(--font-button);
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .footer__icon {
@@ -148,7 +151,9 @@ Sommaire :
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: uppercase;
-
+    font-family: var(--font-button);
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 .footer__host-link {
@@ -156,4 +161,6 @@ Sommaire :
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;    
 }

@@ -27,10 +27,10 @@ Sommaire :
     /* Polices de caractère */
     --font-heading-1: 'Futura Md BT', sans-serif, medium;
     --font-heading-2: 'Lucida', sans-serif, bold;
-    --font-body: 'Gadugi', serif;
+    --font-body: 'Gadugi', sans-serif;
     --font-small-text: 'Gadugi', sans-serif;
-    --font-button: 'Lucida', sans-serif, bold, uppercase;
-    --font-small-uppercase: 'Gadugi', sans-serif, uppercase;
+    --font-button: 'Lucida', sans-serif, bold;
+    --font-small-uppercase: 'Gadugi', sans-serif;
   
     /* Tailles de police de caractère */
     --title-main: 2rem;

@@ -41,7 +41,7 @@ Sommaire :
     display: flex;
     align-items: center;
     justify-content: space-between;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 /* 2. Présentation Homepage/Accueil */
@@ -61,6 +61,7 @@ Sommaire :
     text-align: center;
     position: relative;
     z-index: 1;
+    font-family: var(--font-body);
 }
 
 .top-home__text-1 {
@@ -69,6 +70,7 @@ Sommaire :
     margin-top: 50px;
     margin-right: 50px;
     margin-left: 50px;
+    font-weight: 100;
 }
 
 .top-home__text-2 {
@@ -77,6 +79,7 @@ Sommaire :
     margin-top: 50px;
     margin-right: 50px;
     margin-left: 50px;
+    font-weight: 100;
 }
 
 .top-home__quote__gif {
