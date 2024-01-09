@@ -15,10 +15,9 @@ Sommaire :
     background-color: var(--black-1);
     position: relative;
     color: var(--white);
-    padding: var(--space1x) var(--space5x);
+    padding: var(--space4x) var(--space4x);
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
 }
 
 .footer__list {
@@ -29,23 +28,33 @@ Sommaire :
     margin: 0;
 }
 
+.footer-mid {
+    display: flex;
+    vertical-align: middle;
+}
+
 .footer__title {
+    display: flex;
     padding-top: 25px;
     margin-top: 0;
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing);
     color: var(--white);
     font-family: var(--font-button);
+    font-size: 17px;
     font-weight: 200;
     letter-spacing: 1px;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 .footer__icon {
-    vertical-align: middle;
+    align-items: center;
     color: var(--white);
     width: 2em;
     height: auto;
-    margin-top: 2.5vh;
+    margin-top: 2vh;
+    margin-left: 5px;
 }
 
 /* 2. Début du Footer */
@@ -54,9 +63,9 @@ Sommaire :
 
 .footer__logo {
     cursor: pointer;
+    width: 42.5vw;
+    transition: all 0.3s ease;
 }
-
-.footer__menu {}
 
 .footer__menu .footer__title {
     display: inline-block;
@@ -84,7 +93,7 @@ Sommaire :
 
 .footer__middle__arrow {
     cursor: pointer;
-    padding-bottom: 300px;
+    padding-bottom: 450px;
     top: 0;
     width: 20vw;
     height: auto;
@@ -150,7 +159,7 @@ Sommaire :
     color: var(--brand-green-light);
     font-weight: bold;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     text-transform: uppercase;
     font-family: var(--font-button);
     font-weight: 300;

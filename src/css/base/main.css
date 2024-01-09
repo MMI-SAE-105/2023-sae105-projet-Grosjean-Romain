@@ -58,6 +58,10 @@ p {
     font-family: var(--font-body);
 }
 
+a {
+    text-decoration: none;
+}
+
 .red-link {
     color: var(--system-1);
     font-weight: bold;
