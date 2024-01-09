@@ -97,3 +97,7 @@ Sommaire :
     margin-left: 10px;
     width: 7vw;
 }
+
+.menu__icon-middle:hover {
+    color: var(--brand-green-light);
+}

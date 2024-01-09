@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ atTop: true }" id="top" class="top">
 
 <head>
     <meta charset="UTF-8">
@@ -112,7 +112,7 @@
         <div>
             <h3>*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
             <div x-data="{ agreement1: false, agreement2: false }">
-                <div>
+                <div class="button-mid">
                     <button @click="agreement1 = !agreement1">
                         <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
                             alt="Button checkbox empty">
@@ -122,7 +122,7 @@
                     <h4>I agree to receive communications from “<span class="green-value">Life Finds A
                             Way</span>”.</h4>
                 </div>
-                <div>
+                <div class="button-mid">
                     <button @click="agreement2 = !agreement2">
                         <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
                             alt="Button checkbox empty">
@@ -134,6 +134,20 @@
                 </div>
             </div>
         </div>
+
+        <div id="annex" class="annex">
+            <figure class="annex__content-1">
+                <img class="annex__image" src="/public/img/8-contactform/concept_art-1.jpg"
+                    alt="Concept art of the T-Rex Scene">
+                <figcaption class="annex__text">CONCEPT ART OF THE T-REX SCENE - © UNIVERSAL PICTURES</figcaption>
+            </figure>
+            <figure class="annex__content-2">
+                <img class="annex__image" src="/public/img/8-contactform/concept_art-2.jpg"
+                    alt="Concept art of the river scene in the book">
+                <figcaption class="annex__text">CONCEPT ART OF RIVER PASSAGE IN THE BOOK - © UNIVERSAL PICTURES</figcaption>
+            </figure>
+        </div>
+
     </main>
 
     <footer class="footer">

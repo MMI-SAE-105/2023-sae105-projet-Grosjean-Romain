@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ atTop: true }" id="top" class="top">
 
 <head>
     <meta charset="UTF-8">
@@ -205,6 +205,50 @@
         </div>
 
         => Furthermo-saur on ? Here is a timeline of the Jurassic Park and Jurassic World films:
+
+        <div class="carousel" x-data="{hrefCourant: '#ecran-1',}">
+            <div class="carousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 1" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 2" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 3" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 4" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 5" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carousel_ecran">
+                    <figure>
+                        <img src="/" alt="image ecran 6" class="carousel_images">
+                        <figcaption class="carousel_description"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
 

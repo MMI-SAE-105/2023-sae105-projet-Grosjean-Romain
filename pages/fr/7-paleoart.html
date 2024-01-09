@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ atTop: true }" id="top" class="top">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,63 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body>
+<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
+    <header class="header" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
+        :class="{ 'header--atTop' : !atTop}">
+        <div>
+            <a href="/pages/fr/index.html">
+                <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+            </a>
+        </div>
+        <div class="header__end">
+            <div id="lang-button" class="lang-button">
+                <a href="/pages/fr/7-paleoart.html" rel="alternate">
+                    <img src="/public/icon/32px/fr_flag.svg" alt="Icône drapeau français"></a>
+                <a href="/pages/en/7-palaeoart.html" rel="alternate">
+                    <img class="inactive" src="/public/icon/32px/en_flag.svg" alt="Icône drapeau anglais"></a>
+            </div>
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/1-replique.html">« La vie trouve
+                            toujours un chemin »</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/2-realisateur.html">Steven
+                            Spielberg</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/3-film.html">Jurassic Park</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/4-livre.html">La Science de Jurassic
+                            Park</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/5-musique.html">Une mélodie énigmatique
+                            et menaçante...</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/6-compositeur.html">John
+                            Williams</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/7-paleoart.html">Paléoart ?<img
+                                class="menu__icon-middle" src="/public/icon/32px/paleoart-menu.svg"
+                                alt="Icône Paléoart"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/8-formulaire.html">Contact<img
+                                class="menu__icon-middle" src="/public/icon/32px/mail-menu.svg" alt="Icône Contact"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/9-a_propos.html">À propos<img
+                                class="menu__icon-middle" src="/public/icon/32px/about-menu.svg"
+                                alt="Icône About icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/10-autres_projets.html">Autres
+                            projets<img class="menu__icon-middle" src="/public/icon/32px/book-menu.svg" alt="Icône Autres
+                            projets"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/11-glossaire.html">Glossaire<img
+                                class="menu__icon-middle" src="/public/icon/32px/glossary-menu.svg"
+                                alt="Icône Glossaire"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <main>
         <div>
             <h1>Paléoart ?</h1>
