@@ -159,9 +159,10 @@ Sommaire :
     color: var(--brand-green-light);
     font-weight: bold;
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     text-transform: uppercase;
     font-family: var(--font-button);
+    font-size: 17px;
     font-weight: 300;
     letter-spacing: 3px;
 }

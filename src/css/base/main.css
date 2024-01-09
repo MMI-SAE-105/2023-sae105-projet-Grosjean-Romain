@@ -38,24 +38,32 @@ button {
 body {
     line-height: 1.6;
     background-color: var(--white);
+    color: var(--black-2);
 }
 
 h1 {
     font-family: var(--font-heading-1);
     font-weight: 600;
+    color: var(--black-2);
 }
 
 h2 {
     font-family: var(--font-heading-2);
     font-weight: 400;
+    color: var(--black-2);
 }
 
-h3 {}
+h3 {
+    color: var(--black-2);
+}
 
-h4 {}
+h4 {
+    color: var(--black-2);
+}
 
 p {
     font-family: var(--font-body);
+    color: var(--black-2);
 }
 
 a {

@@ -128,7 +128,7 @@ Sommaire :
 
 .card__text>h3 {
     color: var(--black-1);
-    font-size: var(--title-xl);
+    font-size: var(--title-md);
     color: var(--brand-green-light);
     font-family: var(--font-small-uppercase);
     margin: 1.4vh 0vh 2.1vh 0vh;
