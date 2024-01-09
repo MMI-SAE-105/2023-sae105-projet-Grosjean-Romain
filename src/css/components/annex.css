@@ -2,10 +2,10 @@
 
 Sommaire :
 
-    1. Annexe
+    1. Annexe Base
 */
 
-/* Annexe */
+/* Annexe Base */
 
 .annex {
     display: flex;
@@ -18,7 +18,6 @@ Sommaire :
     flex-direction: column;
     align-items: center;
     width: 100%;
-    overflow: hidden;
     padding-left: var(--space10x);
     padding-right: var(--space10x);
     padding-bottom: var(--space10x);
@@ -31,7 +30,6 @@ Sommaire :
     flex-direction: column;
     align-items: center;
     width: 100%;
-    overflow: hidden;
     padding-left: var(--space10x);
     padding-right: var(--space10x);
     padding-bottom: var(--space10x);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ atTop: true }" id="top" class="top">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,8 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body x-data="{ atTop: true }" id="top" class="top">
-    <header class="header" @scroll.window="atTop = ( window.scrollY > 500 ? false : true )"
+<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
+    <header class="header" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
         :class="{ 'header--atTop' : !atTop}">
         <div class="header__begin">
             <a href="/pages/en/index.html">

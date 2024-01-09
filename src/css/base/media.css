@@ -10,26 +10,8 @@ Sommaire :
 /* Images et vidéos */
 
 img,
-video {
-
-}
+video {}
 
 /* Figure */
 
-figure {
-
-}
-
-/* Overlay */
-
-.duotone {
-   
-}
-
-.duotone::before {
-   
-}
-
-.duotone>img {
-   
-}
+figure {}
