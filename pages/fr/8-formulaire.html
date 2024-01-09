@@ -16,6 +16,67 @@
 </head>
 
 <body>
-    
+    <main>
+        <div>
+            <div>
+                <h1>
+                    Contact
+                </h1>
+            </div>
+            <form class="form" action="/submit_contact" method="post">
+                <p>
+                    <label class="formulaire_nom" for="prenom">Prénom :</label><br>
+                    <input class="nomtext" type="text" id="prenom" name="prenom" value="ex: Romain"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="nom">Nom :</label><br>
+                    <input class="nomtext" type="text" id="nom" name="nom" value="ex: Grosjean"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="nom">Téléphone :</label><br>
+                    <input class="nomtext" type="phone.number" id="phone" name="phone" value="ex: 07-82-55-58-13"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="email">Email:</label><br>
+                    <input class="nom__text" type="email" id="email" name="email" value="exemple@gmail.com"><br>
+                </p>
+                <p>
+                    <label class="formulaire_nom" for="message">Message:</label><br>
+                    <textarea id="message" name="message">Écrivez quelque chose...</textarea><br>
+                </p>
+                <p>
+                    <input class="formulaire_btn" type="submit" value="Envoyer">
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>*En remplissant ce formulaire, vous acceptez notre <b>Politique de confidentialité</b> et <b>Conditions d'utilisation</b>.</h3>
+            <div x-data="{ agreement1: false, agreement2: false }">
+                <div>
+                    <button @click="agreement1 = !agreement1">
+                        <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
+                            alt="Button checkbox empty">
+                        <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
+                            alt="Button checkbox fill">
+                    </button>
+                    <h4>J'accepte de recevoir des communications de la part de « <span class="green-value">Life Finds A
+                            Way</span> ».</h4>
+                </div>
+                <div>
+                    <button @click="agreement2 = !agreement2">
+                        <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
+                            alt="Button checkbox empty">
+                        <img x-show="agreement2" src="/public/icon/larger+/checkbox_fill.svg"
+                            alt="Button checkbox fill">
+                    </button>
+                    <h4>Je consens à ce que mes données soient conservées conformément à la <b>Politique de confidentialité</b>.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
