@@ -15,7 +15,66 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body>
+<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
+    <header class="header" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
+        :class="{ 'header--atTop' : !atTop}">
+        <div>
+            <a href="/pages/en/index.html">
+                <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+            </a>
+        </div>
+        <div class="header__end">
+            <div id="lang-button" class="lang-button">
+                <a href="/pages/en/11-glossary.html" rel="alternate">
+                    <img src="/public/icon/32px/en_flag.svg" alt="Icon english flag"></a>
+                <a href="/pages/fr/11-glossaire.html" rel="alternate">
+                    <img class="inactive" src="/public/icon/32px/fr_flag.svg" alt="Icon french flag"></a>
+            </div>
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/1-characterline.html">“Life
+                            always
+                            finds a way”</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/2-director.html">Steven
+                            Spielberg</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/3-movie.html">Jurassic Park</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/4-book.html">“The Science of
+                            Jurassic
+                            Park”</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/5-music.html">An enigmatic,
+                            menacing
+                            melody...</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/6-composer.html">John
+                            Williams</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/7-palaeoart.html">Palaeoart?<img
+                                class="menu__icon-middle" src="/public/icon/32px/paleoart-menu.svg"
+                                alt="Palaeoart icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/8-contactform.html">Contact<img
+                                class="menu__icon-middle" src="/public/icon/32px/mail-menu.svg"
+                                alt="Contact-Mail icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/9-about.html">About<img
+                                class="menu__icon-middle" src="/public/icon/32px/about-menu.svg" alt="About icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-otherprojects.html">Other
+                            projects<img class="menu__icon-middle" src="/public/icon/32px/book-menu.svg"
+                                alt="Other Projects icon"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/11-glossary.html">Glossary<img
+                                class="menu__icon-middle" src="/public/icon/32px/glossary-menu.svg"
+                                alt="Glossary icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <div>
             <h1>

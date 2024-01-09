@@ -14,7 +14,347 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body>
-    
+<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
+    <header class="header" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
+        :class="{ 'header--atTop' : !atTop}">
+        <div>
+            <a href="/pages/en/index.html">
+                <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+            </a>
+        </div>
+        <div class="header__end">
+            <div id="lang-button" class="lang-button">
+                <a href="/pages/en/index.html" rel="alternate">
+                    <img src="/public/icon/32px/en_flag.svg" alt="Icon english flag"></a>
+                <a href="/pages/fr/index.html" rel="alternate">
+                    <img class="inactive" src="/public/icon/32px/fr_flag.svg" alt="Icon french flag"></a>
+            </div>
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/1-characterline.html">“Life
+                            always
+                            finds a way”</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/2-director.html">Steven
+                            Spielberg</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/3-movie.html">Jurassic Park</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/4-book.html">“The Science of
+                            Jurassic
+                            Park”</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/5-music.html">An enigmatic,
+                            menacing
+                            melody...</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/6-composer.html">John
+                            Williams</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/7-palaeoart.html">Palaeoart?<img
+                                class="menu__icon-middle" src="/public/icon/32px/paleoart-menu.svg"
+                                alt="Palaeoart icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/8-contactform.html">Contact<img
+                                class="menu__icon-middle" src="/public/icon/32px/mail-menu.svg"
+                                alt="Contact-Mail icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/9-about.html">About<img
+                                class="menu__icon-middle" src="/public/icon/32px/about-menu.svg" alt="About icon"></a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-otherprojects.html">Other
+                            projects<img class="menu__icon-middle" src="/public/icon/32px/book-menu.svg"
+                                alt="Other Projects icon"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/11-glossary.html">Glossary<img
+                                class="menu__icon-middle" src="/public/icon/32px/glossary-menu.svg"
+                                alt="Glossary icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="top_home" class="top-home">
+            <img class="top-home__quote__gif" src="/public/img/0-home/jurassic_park_line.gif" alt="Ian Malcolm line">
+            <div>
+                <blockquote class="top-home__quote__container">
+                    <img class="chevron__left" src="/public/icon/32px/chevron_left_en.svg" alt="Icon chevron left">
+                    <h1 class="top-home__quote__text">No. I'm, I'm simply saying that <span
+                            class="top-home__quote__text__color">life</span>, uh… <span
+                            class="top-home__quote__text__color">finds
+                            a
+                            way</span>.</h1>
+                    <img class="chevron__right" src="/public/icon/32px/chevron_right_en.svg" alt="Icon chevron right">
+                </blockquote>
+                <div class="top-home__text-all">
+                    <h2 class="top-home__text-1">Welcome to “Life finds a way”, a website inspired by an iconic line
+                        from
+                        the Jurassic Park film.
+                    </h2>
+                    <h2 class="top-home__text-2">
+                        Enter a niche
+                        world centred around the franchise, dinosaurs and palaeoart!</h2>
+                </div>
+                <figure class="fern__gen">
+                    <img class="fern__gen-left" src="/public/icon/larger+/fern_home_left.svg" alt="Flower pattern left">
+                    <img class="fern__gen-right" src="/public/icon/larger+/fern_home_right.svg"
+                        alt="Flower pattern right">
+                </figure>
+            </div>
+        </div>
+
+        <div id="cards" class="cards">
+            <div id="card__fixed">
+                <div id="card__image-fixed">
+                    <button onclick="closeImage()"><img class="card__size-down-icon"
+                            src="/public/icon/24px/size_down.svg" alt="Size down icon"></button>
+                </div>
+            </div>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(1)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/1-characterline.html"><img class="card__flower-link"
+                            src="/public/icon/24px/flower.svg" alt="Flower link"></a>
+                    <img class="card__image" id="cardImage" src="/public/img/0-home/card_1.jpg" alt="Card line">
+                </figure>
+                <div class="card__text">
+                    <h3>“LIFE ALWAYS FINDS A WAY”</h3>
+                    <p>In Steven Spielberg's cult film Jurassic Park, Dr Ian Malcolm's line, “Life always finds
+                        a
+                        way”,
+                        sounds like a warning against the human arrogance of taking oneself for God in the face
+                        of
+                        nature.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(2)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/2-director.html"><img class="card__flower-link"
+                            src="/public/icon/24px/flower.svg" alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_2.jpg" alt="Card director">
+                </figure>
+                <div class="card__text">
+                    <h3>STEVEN SPIELBERG</h3>
+                    <p>A renowned director who revolutionized Hollywood cinema, Steven Spielberg shares many
+                        similarities
+                        with one of the
+                        characters in his film Jurassic Park, John Hammond. Like Hammond, Spielberg has
+                        completely
+                        reinvented and redefined his
+                        field by combining innovation and spectacular.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(3)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/3-movie.html"><img class="card__flower-link" src="/public/icon/24px/flower.svg"
+                            alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_3.jpg" alt="Card film">
+                </figure>
+                <div class="card__text">
+                    <h3>JURASSIC PARK</h3>
+                    <p>Jurassic Park, Steven Spielberg's undisputed cinematic masterpiece, made cinema history
+                        by
+                        redefining
+                        our perception of
+                        dinosaurs. Released in 1993, it became an icon of popular culture, bringing “Dinomania”
+                        and
+                        “Palaeoart” to the fore.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(4)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/4-book.html"><img class="card__flower-link" src="/public/icon/24px/flower.svg"
+                            alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_4.jpg" alt="Card book">
+                </figure>
+                <div class="card__text">
+                    <h3>“THE SCIENCE OF JURASSIC PARK”</h3>
+                    <p>“The science of Jurassic Park and The Lost World: How to make a dinosaur” explores the
+                        many
+                        scientific dimensions of the
+                        film and asks essential questions about the possibility and scientific reality of
+                        resurrecting
+                        extinct species.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(5)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/5-music.html"><img class="card__flower-link" src="/public/icon/24px/flower.svg"
+                            alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_5.jpg" alt="Card music">
+                </figure>
+                <div class="card__text">
+                    <h3>AN ENIGMATIC, MENACING MELODY...</h3>
+                    <p>A powerful element in cinema, is music. Music is capable of evoking a wide range of
+                        emotions. In
+                        Jurassic Park,
+                        the music composed
+                        by John Williams is closely linked to the famous phrase “Life always finds a way” and
+                        adds
+                        significant depth to the
+                        story.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__article">
+                <figure class="card__content">
+                    <img onclick="openImage(6)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/6-composer.html"><img class="card__flower-link"
+                            src="/public/icon/24px/flower.svg" alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_6.jpg" alt="Card composer">
+                </figure>
+                <div class="card__text">
+                    <h3>JOHN WILLIAMS</h3>
+                    <p>A living legend in the world of musical composition, John William's work on Jurassic Park
+                        has
+                        only
+                        enhanced the film's
+                        reputation and his own. His unforgettable compositions make a major contribution to the
+                        viewer's
+                        unique experience.
+                    </p>
+                </div>
+            </article>
+            <article class="card card__special">
+                <figure class="card__content">
+                    <img onclick="openImage(7)" class="card__size-up-icon" src="/public/icon/24px/size_up.svg"
+                        alt="Size up icon">
+                    <a href="/pages/en/7-palaeoart.html"><img class="card__flower-link"
+                            src="/public/icon/24px/flower.svg" alt="Flower link"></a>
+                    <img class="card__image" src="/public/img/0-home/card_7.jpg" alt="Card palaeoart">
+                </figure>
+                <div class="card__text">
+                    <h3 class="special-color">PALAEOART?</h3>
+                    <p>“Palaeoart” is a discipline that results from an extraordinary fusion of Art and Science,
+                        whose
+                        sole
+                        aim is to recreate
+                        extinct species with the precision and creativity found in other fields.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div id="annex" class="annex">
+            <figure class="annex__content-1">
+                <img class="annex__image" src="/public/img/0-home/triceratops_scene.jpg"
+                    alt="Photogram of the Triceratops scene in Jurassic Park">
+                <figcaption class="annex__text">JURASSIC PARK, PHOTOGRAM OF THE TRICERATOPS SCENE - © UNIVERSAL
+                    PICTURES</figcaption>
+            </figure>
+            <figure class="annex__content-2">
+                <img class="annex__image" src="/public/img/0-home/making_of_brachiosaurus.jpg"
+                    alt="Brachiosaurus behind-the-scenes in Jurassic Park">
+                <figcaption class="annex__text">JURASSIC PARK, PHOTOGRAPHY DURING THE MAKING-OF OF THE
+                    BRACHIOSAURUS SCENE - © UNIVERSAL PICTURES</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__begin">
+            <img class="footer__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+            <nav>
+                <ul class="footer__list list-unstyled">
+                    <li>
+                        <a href="#" @click.prevent="menuIsOpen = !menuIsOpen">
+                            <h3 class="footer__title">MENU</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid" href="/pages/en/7-palaeoart.html">
+                            <h3 class="footer__title">PALAEOART?</h3><img src="/public/icon/32px/paleoart.svg"
+                                alt="Palaeoart icon" class="footer__icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid" href="/pages/en/8-contactform.html">
+                            <h3 class="footer__title">CONTACT</h3><img src="/public/icon/32px/mail.svg"
+                                alt="Contact-Mail icon" class="footer__icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid" href="/pages/en/9-about.html">
+                            <h3 class="footer__title">ABOUT</h3><img src="/public/icon/32px/about.svg" alt="About icon"
+                                class="footer__icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid" href="/pages/en/10-otherprojects.html">
+                            <h3 class="footer__title">OTHER PROJECTS</h3><img src="/public/icon/32px/book.svg"
+                                alt="Other Projects icon" class="footer__icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid" href="/pages/en/11-glossary.html">
+                            <h3 class="footer__title">GLOSSARY</h3><img src="/public/icon/32px/glossary.svg"
+                                alt="Glossary icon" class="footer__icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__middle">
+            <img class="footer__middle__arrow" src="/public/icon/larger+/arrow_footer-big.svg" alt="Arrow to Header">
+            <img class="footer__middle__signature" src="/public/icon/logos/signature.svg" alt="Signature">
+        </div>
+        <div class="footer__social">
+            <h3 class="footer__title">FOLLOW US ON!</h3>
+            <ul class="footer__list__social list-unstyled">
+                <li>
+                    <a href="https://discord.gg/gJT6yBPu" aria-label="Discord">
+                        <img class="footer__iconSocial" src="/public/icon/24px/discord.svg" alt="Discord icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lepetrinderomain/?hl=fr" aria-label="Instagram"><img
+                            class="footer__iconSocial" src="/public/icon/24px/instagram.svg" alt="Instagram icon"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Romaindyverti21" aria-label="Twitter/X"><img class="footer__iconSocial"
+                            src="/public/icon/24px/twitter.svg" alt="Twitter/X icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rg-sept-deux/" aria-label="LikedIn"><img
+                            class="footer__iconSocial" src="/public/icon/24px/linkedin.svg" alt="LinkedIn icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCgkOa66fVLe2fpdFPj4QYDg" aria-label="Youtube"><img
+                            class="footer__iconSocial" src="/public/icon/24px/youtube.svg" alt="Youtube icon"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <p>Romain Grosjean - Gr·A1</p>
+            <p>mail : <a href="mailto:romaindyvertiteam@gmail.com"
+                    class="footer__address"><span>romaindyvertiteam@gmail.com</span></a>
+            </p>
+            <a href="https://butmmi.thomasjeu.fr" aria-label="MMI"><img class="footer__logo__mmi"
+                    src="/public/icon/logos/logo_mmi.svg" alt="Logo MMI"></a>
+        </div>
+        <div>
+            <h3 class="footer__title">LEGAL NOTICE</h3>
+            <p class="footer__end__text">Project carried out as part of an educational exercise at the BUT MMI
+                department in Montbéliard -
+                2023-2024</p>
+            <h3 class="footer__host">*Host: <a class="footer__host-link" href="https://www.infomaniak.com"
+                    target="_blank">Infomaniak</a></h3>
+        </div>
+    </footer>
 </body>
+
 </html>
