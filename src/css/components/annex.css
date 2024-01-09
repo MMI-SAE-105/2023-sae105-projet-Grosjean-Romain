@@ -18,10 +18,10 @@ Sommaire :
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: var(--space10x);
-    padding-right: var(--space10x);
-    padding-bottom: var(--space10x);
-    padding-top: var(--space5x);
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-bottom: 7vh;
+    padding-top: 2.8vh;
     box-sizing: border-box;
 }
 
@@ -30,15 +30,15 @@ Sommaire :
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: var(--space10x);
-    padding-right: var(--space10x);
-    padding-bottom: var(--space10x);
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-bottom: 5.6vh;
+    padding-bottom: 5.6vh;
     box-sizing: border-box;
 }
 
 .annex__image {
     width: 100%;
-    max-width: 100%;
     height: auto;
     border-radius: 1.8vh;
     transition: transform 0.25s ease-in-out;
@@ -55,6 +55,7 @@ Sommaire :
 .annex__text {
     color: var(--brand-magenta);
     font-weight: bold;
+    font-size: 12px;
     text-decoration: none;
     text-align: left;
     margin-top: var(--space2x);

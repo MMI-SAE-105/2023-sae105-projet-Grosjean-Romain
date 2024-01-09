@@ -21,10 +21,10 @@ Sommaire :
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding-left: var(--space10x);
-    padding-right: var(--space10x);
-    padding-bottom: var(--space10x);
-    padding-top: var(--space10x);
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-bottom: 5.6vh;
+    padding-top: 5.6vh;
     box-sizing: border-box;
 }
 
@@ -58,10 +58,10 @@ Sommaire :
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding-left: var(--space10x);
-    padding-right: var(--space10x);
-    padding-bottom: var(--space10x);
-    padding-top: var(--space10x);
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-bottom: 5.6vh;
+    padding-top: 5.6vh;
     box-sizing: border-box;
     -webkit-transition: transform 0.25s ease-in-out;
     -moz-transition: transform 0.25s ease-in-out;
@@ -76,9 +76,9 @@ Sommaire :
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding-left: var(--space10x);
-    padding-right: var(--space10x);
-    padding-bottom: var(--space10x);
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-bottom: 5.6vh;
     box-sizing: border-box;
     -webkit-transition: transform 0.25s ease-in-out;
     -moz-transition: transform 0.25s ease-in-out;

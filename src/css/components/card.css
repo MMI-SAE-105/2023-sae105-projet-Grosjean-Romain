@@ -28,7 +28,7 @@ Sommaire :
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 2.8vh;
-    grid-gap: 5.5vh;
+    grid-gap: 3.5vh;
 }
 
 .card {
