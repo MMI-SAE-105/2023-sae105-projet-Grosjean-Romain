@@ -85,7 +85,8 @@ Sommaire :
 .footer__middle__arrow {
     cursor: pointer;
     padding-bottom: 300px;
-    width: 17vw;
+    top: 0;
+    width: 20vw;
     height: auto;
     order: 1;
 }
@@ -93,7 +94,6 @@ Sommaire :
 .footer__middle__signature {
     color: var(--brand-green-light);
     width: 14vw;
-    padding-top: 100px;
     height: auto;
     order: 2;
     margin-top: 1vh;
@@ -136,10 +136,10 @@ Sommaire :
 
 .footer__logo__mmi {
     position: relative;
-    width: 25%;
+    width: 30%;
     margin-top: 15%;
-    margin-left: 79%;
-    }
+    margin-left: 76.5%;
+}
 
 .footer__end__text {
     color: var(--grey-1);
