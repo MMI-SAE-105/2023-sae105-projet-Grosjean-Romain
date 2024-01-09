@@ -51,8 +51,9 @@ Sommaire :
     display: block;
     align-items: center;
     justify-content: center;
-    margin: 50px;
-    margin-top: 175px;
+    margin-right: 2.8vh;
+    margin-left: 2.8vh;
+    margin-top: 17.5vh;
     overflow: hidden;
     border-radius: 1.8vh;
 }
@@ -67,7 +68,7 @@ Sommaire :
 .top-home__text-1 {
     max-width: 100%;
     padding: 0 10px;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-right: 2.8vh;
     margin-left: 2.8vh;
     font-weight: 125;
@@ -112,8 +113,9 @@ Sommaire :
 }
 
 .top-home__quote__text {
+    margin-top: 5px;
     text-align: center;
-    font-size: 22px;
+    font-size: 17.5px;
 }
 
 .top-home__quote__text__color {

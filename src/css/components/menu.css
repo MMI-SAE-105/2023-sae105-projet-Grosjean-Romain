@@ -14,10 +14,12 @@ Sommaire :
     opacity: 0;
     position: fixed;
     inset: 0;
-    background-color: var(--brand-green-dark);
-    font-size: var(--text-xl);
-    letter-spacing: var(--letter-spacing);
+    background-image: url('/public/icon/larger+/flowers_menu.svg');
+    background-size: cover;
+    background-position: center;
     transition: all 0.4s ease-in-out;
+    font-size: 3vh;
+    font-family: var(--font-heading-2);
 }
 
 .menu--open {
@@ -58,7 +60,6 @@ Sommaire :
 .menu-btn--open .menu-btn__bar,
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
-    background-color: var(--);
     transform: rotate(135deg);
 }
 
@@ -68,25 +69,31 @@ Sommaire :
     top: 0;
 }
 
-/* Menu content */
+/* Menu contenu */
 
 .menu__list {
-    margin-top: 25vh;
-    margin-left: 15vw;
+    margin-top: 4.2vw;
+    margin-left: 4.2vw;
 }
 
 .menu__item {
-    margin-top: 15%;
+    margin-top: 5.5vw;
 }
 
 .menu__link {
     color: var(--brand-green-simple);
     text-decoration: none;
     font-weight: bold;
-    font-size: 5vh;
     transition: color 0.3s ease;
 }
 
 .menu__link:hover {
     color: var(--brand-green-light);
+}
+
+.menu__icon-middle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 7vw;
 }

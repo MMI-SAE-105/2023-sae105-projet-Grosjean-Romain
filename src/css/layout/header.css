@@ -2,7 +2,10 @@
 
 Sommaire :
 
-    1. 
+    1. Règles d'ensemble
+    2. Début du Header
+    3. Fin du Header
+    4. Sélection Langue
 */
 
 .header {
@@ -16,16 +19,15 @@ Sommaire :
     justify-content: space-between;
     background-color: var(--brand-blue-dark);
     transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .header--atTop {
     background-color: transparent;
 }
 
-.header__begin {}
-
 .header__logo {
-    width: 27vh;
+    max-width: 100%;
     margin-right: var(--space3x);
     transition: all 0.3s ease;
 }
@@ -45,10 +47,42 @@ Sommaire :
     font-weight: bold;
 }
 
-.header__menu {}
-
 .header__menu-btn {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.header--invisible {
+    display: none;
+}
+
+/* Sélection Langue */
+
+#lang-button {
+    margin-right: 15px;
+}
+
+#lang-button a {
+    display: inline-block;
+}
+
+#lang-button img {
+    width: 32px;
+    height: 32px;
+    margin: auto 3px;
+}
+
+.inactive {
+    opacity: 0.5;
+}
+
+#lang-button img:hover {
+    cursor: pointer;
+    transition: all .5s;
+    opacity: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
