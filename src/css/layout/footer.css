@@ -137,9 +137,9 @@ Sommaire :
 .footer__logo__mmi {
     position: relative;
     width: 25%;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-left: 79%;
-}
+    }
 
 .footer__end__text {
     color: var(--grey-1);
@@ -163,5 +163,5 @@ Sommaire :
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
 }

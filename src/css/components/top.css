@@ -68,10 +68,11 @@ Sommaire :
 .top-home__text-1 {
     max-width: 100%;
     padding: 0 10px;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 25px;
+    margin-right: 4.2vh;
     margin-left: 50px;
     font-weight: 100;
+    font-size: 15px;
 }
 
 .top-home__text-2 {
@@ -81,6 +82,7 @@ Sommaire :
     margin-right: 50px;
     margin-left: 50px;
     font-weight: 100;
+    font-size: 15px;
 }
 
 .top-home__quote__gif {
@@ -112,6 +114,7 @@ Sommaire :
 
 .top-home__quote__text {
     text-align: center;
+    font-size: 23px;
 }
 
 .top-home__quote__text__color {
