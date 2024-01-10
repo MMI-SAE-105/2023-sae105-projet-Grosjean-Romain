@@ -2,5 +2,63 @@
 
 Sommaire :
 
-    1. 
+    1. body-error
+    2. error-page
+    3. error-content
+    4. error-title
+    5. error-message
+    6. button-return
+    7. link-error
 */
+
+.body-error {
+    background-image: url('/public/img/12-error_page/error-dino.gif');
+    background-size: cover;
+}
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-content {
+    text-align: center;
+}
+
+.error-title {
+    font-size: 2em;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    color: var(--system-1);
+}
+
+.error-message {
+    font-size: 1.2em;
+    margin-bottom: 5vh;
+}
+
+.button-return {
+    padding: 3vh 2vw 3vh 2vw;
+    background-color: var(--system-1);
+    border: 0;
+    border-radius: 1.8vh;
+    font-family: var(--font-button);
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.8s;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.link-error {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.button-return:hover {
+    background-color: var(--brand-green-light);
+}

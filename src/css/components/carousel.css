@@ -16,8 +16,8 @@ Sommaire :
     position: relative;
     text-align: center;
     gap: var(--space3x);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 /* Éléments parents */
@@ -54,14 +54,14 @@ Sommaire :
 
 .carousel_images {
     width: auto;
-    height: 350px;
+    height: 55vh;
 }
 
 .carousel_description {
     display: block;
     background-color: var(--brand-green-simple);
     color: var(--white);
-    font-size: 13px;
+    font-size: 1.8vw;
     font-family: var(--font-small-text);
     text-align: center;
     text-decoration: none;

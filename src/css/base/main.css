@@ -75,7 +75,7 @@ a {
 dt {
     font-family: var(--font-heading-2);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 2vw;
     color: var(--black-2);
     margin-top: 2.8vh;
     margin-left: 4.2vh;
@@ -84,7 +84,7 @@ dt {
 
 dd {
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 2vw;
     color: var(--black-2);
 }
 

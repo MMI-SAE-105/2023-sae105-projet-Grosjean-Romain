@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Life Finds A Way Website">
-    <title>Welcome to Life Finds A Way!</title>
+    <title>Error 404 ｜ LFAW</title>
     <link rel="icon" href="/public/icon/logos/logo_main1.svg">
     <link rel="stylesheet" href="/src/css/vendors/style.css">
     <link rel="alternate" hreflang="en" href="/pages/en/index.html">
@@ -15,7 +15,7 @@
     <script src="/src/js/image.js"></script>
 </head>
 
-<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
+<body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }" class="body-error">
     <header class="header__error" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
         :class="{ 'header--atTop' : !atTop}">
         <div>
@@ -26,7 +26,7 @@
         <div class="header__end">
             <div id="lang-button" class="lang-button">
                 <a href="/pages/en/index.html" rel="alternate">
-                    <img src="/public/icon/32px/en_flag.svg" alt="Icon english flag"></a>
+                    <img  class="inactive" src="/public/icon/32px/en_flag.svg" alt="Icon english flag"></a>
                 <a href="/pages/fr/index.html" rel="alternate">
                     <img class="inactive" src="/public/icon/32px/fr_flag.svg" alt="Icon french flag"></a>
             </div>
@@ -75,10 +75,20 @@
         </div>
     </header>
 
-    <main>
-
-
-
+    <main class="error-page">
+        <div class="error-content">
+            <h1 class="error-title">Error 404 ｜ Erreur 404</h1>
+            <p class="error-message">Were Sorry the page you were looking for was stomped on by a T-Rex. Make sure you typed in the right
+                address, or
+                try again later ｜ Nous sommes désolés, la page que vous cherchiez a été piétinée par un T-Rex.
+                Assurez-vous d'avoir tapé la bonne
+                adresse, ou réessayez plus tard.
+            </p>
+            <button class="button-return">
+                <a class="link-error" href="/pages/en/index.html">Looking for a way elsewhere? ｜ Cherchez un autre
+                    chemin ?</button></a>
+            </button>
+        </div>
     </main>
 </body>
 

@@ -125,7 +125,7 @@ Sommaire :
 
 .article-details {
     font-family: var(--font-small-text);
-    font-size: 13px;
+    font-size: 3vw;
     text-align: right;
     margin-bottom: 1.4vh;
 }
@@ -143,7 +143,7 @@ Sommaire :
 .text-main-low {
     margin-bottom: 1.4vh;
     margin-top: 1.4vh;
-    font-size: 13px;
+    font-size: 3vw;
 }
 
 /* Alignement */
@@ -220,7 +220,7 @@ Sommaire :
     padding-bottom: 1.4vh;
     padding-top: 0.7vh;
     font-family: var(--font-button);
-    font-size: 15px;
+    font-size: 2.5vw;
     text-transform: uppercase;
 }
 
@@ -239,6 +239,6 @@ Sommaire :
     padding-bottom: 1.4vh;
     padding-top: 0.7vh;
     font-family: var(--font-button);
-    font-size: 15px;
+    font-size: 2.5vw;
     text-transform: uppercase;
 }
