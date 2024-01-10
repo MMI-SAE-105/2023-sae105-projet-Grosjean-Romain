@@ -114,20 +114,20 @@
                 </form>
             </div>
             <div>
-                <h3>*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
+                <h3 class="question">*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
                 <div x-data="{ agreement1: false, agreement2: false }">
                     <div class="button-mid">
-                        <button @click="agreement1 = !agreement1">
-                            <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
+                        <button @click="agreement1 = !agreement1" class="buttoninteract">
+                            <img class="buttoninteract-correction" x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
                                 alt="Button checkbox empty">
-                            <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
+                            <img class="buttoninteract-correction" x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
                                 alt="Button checkbox fill">
                         </button>
                         <h4>I agree to receive communications from “<span class="green-value">Life Finds A
                                 Way</span>”.</h4>
                     </div>
                     <div class="button-mid">
-                        <button @click="agreement2 = !agreement2">
+                        <button class="buttoninteract" @click="agreement2 = !agreement2">
                             <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
                                 alt="Button checkbox empty">
                             <img x-show="agreement2" src="/public/icon/larger+/checkbox_fill.svg"

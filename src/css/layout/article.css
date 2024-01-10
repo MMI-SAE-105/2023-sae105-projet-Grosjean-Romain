@@ -5,7 +5,8 @@ Sommaire :
     1. Article Images
     2. Article Vidéos
     3. Article Textes
-    4. En savoir +
+    4. Alignement
+    5. En savoir +
 */
 
 /* Article Images */
@@ -117,7 +118,7 @@ Sommaire :
 .article-intro,
 .article-details {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 1.4vh;
     padding-top: 2.8vh;
     padding-left: 1.4vh;
 }
@@ -126,6 +127,7 @@ Sommaire :
     font-family: var(--font-small-text);
     font-size: 13px;
     text-align: right;
+    margin-bottom: 1.4vh;
 }
 
 .article-details p {
@@ -134,7 +136,8 @@ Sommaire :
 
 .text-main {
     margin-bottom: 1.4vh;
-    margin-top: 1.4vh;
+    margin-left: 4.2vh;
+    margin-right: 4.2vh;
 }
 
 .text-main-low {
@@ -143,9 +146,61 @@ Sommaire :
     font-size: 13px;
 }
 
+/* Alignement */
+
 .score-mid {
     display: flex;
     vertical-align: middle;
+    list-style-type: none;
+    margin-bottom: 2.8vh;
+    margin-top: 2.8vh;
+    color: var(--system-2);
+    margin-left: 4.2vh;
+    margin-right: 4.2vh;
+}
+
+.score-mid a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.score-mid h3 {
+    margin: 0;
+    font-family: var(--font-small-text);
+    font-size: 1.5vh;
+    flex-grow: 1;
+    color: var(--system-2);
+}
+
+.score-mid-paleo {
+    list-style-type: none;
+    margin-bottom: 2.8vh;
+    margin-top: 2.8vh;
+    color: var(--system-2);
+    margin-left: 4.2vh;
+    margin-right: 4.2vh;
+}
+
+.score-mid-paleo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.score-mid-paleo h3 {
+    margin: 0;
+    font-family: var(--font-small-text);
+    font-size: 2vh;
+    flex-grow: 1;
+    color: var(--system-2);
+}
+
+.score-mid-paleo-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* En savoir + */
@@ -157,6 +212,7 @@ Sommaire :
     border-radius: 1.8vh;
     margin-left: 4.2vh;
     margin-right: 4.2vh;
+    margin-top: 4.2vh;
 }
 
 .furthermo h4 {
@@ -175,6 +231,7 @@ Sommaire :
     border-radius: 1.8vh;
     margin-left: 4.2vh;
     margin-right: 4.2vh;
+    margin-top: 4.2vh;
 }
 
 .furthermo-paleo h4 {

@@ -23,18 +23,26 @@ Sommaire :
 }
 
 .top__big-title {
-    left: 35%;
-    top: 350px;
+    top: 65px;
     text-transform: uppercase;
     position: absolute;
     z-index: 1;
-    transform: translateX(-50%);
     color: var(--white);
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
+    font-size: 9vw;
 }
 
 .top__title {
     font-size: 23px;
     font-family: var(--font-heading-1);
+}
+
+.top__title-about {
+    font-size: 23px;
+    font-family: var(--font-heading-1);
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
 }
 
 .top__sub-title {

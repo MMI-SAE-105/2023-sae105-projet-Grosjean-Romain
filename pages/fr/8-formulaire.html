@@ -94,8 +94,7 @@
                     </p>
                     <p>
                         <label class="formulaire_nom" for="nom">Téléphone :</label><br>
-                        <input class="nomtext" type="tel" id="phone" name="phone"
-                            value="ex: 07-82-55-58-13"><br>
+                        <input class="nomtext" type="tel" id="phone" name="phone" value="ex: 07-82-55-58-13"><br>
                     </p>
                     <p>
                         <label class="formulaire_nom" for="email">Email:</label><br>
@@ -111,16 +110,18 @@
                 </form>
             </div>
             <div>
-                <h3>*En remplissant ce formulaire, vous acceptez notre <b>Politique de confidentialité</b> et
+                <h3 class="question">*En remplissant ce formulaire, vous acceptez notre <b>Politique de
+                        confidentialité</b> et
                     <b>Conditions
-                        d'utilisation</b>.</h3>
+                        d'utilisation</b>.
+                </h3>
                 <div x-data="{ agreement1: false, agreement2: false }">
                     <div class="button-mid">
                         <button @click="agreement1 = !agreement1">
-                            <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
-                                alt="Button checkbox empty">
-                            <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
-                                alt="Button checkbox fill">
+                            <img class="buttoninteract-correction_fr" x-show="!agreement1"
+                                src="/public/icon/larger+/checkbox_empty.svg" alt="Button checkbox empty">
+                            <img class="buttoninteract-correction_fr" x-show="agreement1"
+                                src="/public/icon/larger+/checkbox_fill.svg" alt="Button checkbox fill">
                         </button>
                         <h4>J'accepte de recevoir des communications de la part de « <span class="green-value">Life
                                 Finds A

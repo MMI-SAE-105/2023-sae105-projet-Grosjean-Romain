@@ -49,6 +49,7 @@ Sommaire :
     margin: 0;
     overflow: hidden;
     border-radius: 1.8vh;
+    position: relative;
 }
 
 .carousel_images {
@@ -57,7 +58,7 @@ Sommaire :
 }
 
 .carousel_description {
-    display: relative;
+    display: block;
     background-color: var(--brand-green-simple);
     color: var(--white);
     font-size: 13px;
@@ -66,5 +67,9 @@ Sommaire :
     text-decoration: none;
     font-style: oblique;
     padding-bottom: 1.4vh;
-    padding-top: 0.7vh;;
+    padding-top: 0.7vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

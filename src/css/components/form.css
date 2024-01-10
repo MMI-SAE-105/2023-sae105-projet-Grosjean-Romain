@@ -2,21 +2,20 @@
 
 Sommaire :
 
-        1. form
-        2. label
-        3. input, textarea
-        4. input[type="submit"]
-        5. input[type="submit"]:hover
+        1. Base
+        2. Bouton
 */
+
+/* Base */
 
 form {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 35px auto 0 auto;
     padding: 2vw;
     border-radius: 1.8vh;
     box-shadow: 0 0 1vh var(--grey-1);
-    padding-left: var(--space5x);
-    padding-right: var(--space5x);
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
     padding-bottom: var(--space5x);
     padding-top: var(--space1x);
 }
@@ -59,4 +58,44 @@ input[type="submit"]:hover {
     background-color: var(--brand-green-light);
 }
 
-.button-mid {}
+.question {
+    font-family: var(--font-small-text);
+    font-size: 2vh;
+    margin-top: 2.8vh;
+    margin-right: 2.8vh;
+    margin-left: 2.8vh;
+}
+
+/* Bouton */
+
+.button-mid {
+    display: flex;
+    align-items: center;
+    margin-left: 2.8vh;
+    margin-right: 2.8vh;
+    margin-top: 2.8vh;
+}
+
+.buttoninteract {
+    width: 3vh;
+    height: 3vh;
+}
+
+.buttoninteract-correction {
+    width: 65%;
+    height: 65%;
+    margin-right: 2.8vh;
+}
+
+.buttoninteract-correction_fr {
+    width: 40%;
+    height: 40%;
+    margin-right: 2.8vh;
+}
+
+.button-mid h4 {
+    font-family: var(--font-small-text);
+    font-size: 1.5vh;
+    margin-right: 2.8vh;
+    margin-left: 2.8vh;
+}
