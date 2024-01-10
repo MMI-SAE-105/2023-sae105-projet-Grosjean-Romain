@@ -10,7 +10,10 @@ Sommaire :
 /* Images et vidéos */
 
 img,
-video {}
+video {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Figure */
 

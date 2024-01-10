@@ -73,20 +73,24 @@
     </header>
 
     <main>
-        <div>
-            <h1>La Science de Jurassic Park</h1>
-        </div>
-        <div>
-            <section class="article-intro">
-                <h1>D'un point de vue scientifique, comment sont ramenées à la vie les
-                    espèces éteintes ?</h1>
-                <h2><span class="green-value">La Science de Jurassic Park</span> et des Dinomédias</h2>
-            </section>
-            <section class="article-details">
-                <p>Écrit par GROSJEAN Romain</p>
-                <p>Publié le 18 octobre 2023</p>
-                <p>Temps de lecture : 2'min</p>
-            </section>
+        <div class="top">
+            <figure class="top__img">
+                <img src="/public/img/4-book/0main_book.jpg" alt="Main image">
+            </figure>
+            <h1 class="top__big-title">La Science de Jurassic Park</h1>
+            <div class="top__chapo">
+                <section class="article-intro">
+                    <h1 class="top__title">D'un point de vue scientifique, comment sont ramenées à la vie les
+                        espèces éteintes ?</h1>
+                    <h2 class="top__sub-title"><span class="green-value">La Science de Jurassic Park</span> et des
+                        Dinomédias</h2>
+                </section>
+                <section class="article-details">
+                    <p>Écrit par GROSJEAN Romain</p>
+                    <p>Publié le 18 octobre 2023</p>
+                    <p>Temps de lecture : 2'min</p>
+                </section>
+            </div>
         </div>
 
         <div id="article image" class="article__image">
@@ -114,6 +118,7 @@
                 derrière la fiction.
             </p>
         </div>
+
         <div id="article image" class="article__image">
             <figure class="article__image-contener">
                 <img class="article__image-source" src="/public/img/4-book/book-2.jpg"
@@ -144,8 +149,67 @@
             </p>
         </div>
 
-        => En savoir plus ? Voici une sélection de livres intéressants et en rapport avec le sujet :
+        <div class="furthermo">
+            <h4>=> En savoir plus ? Voici une sélection de livres intéressants et en rapport avec le sujet :</h4>
+        </div>
 
+        <div class="carousel" x-data="{hrefCourant: '#ecran-1',}">
+            <div class="carousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel1.jpg" alt="image ecran 1" class="carousel_images">
+                        <figcaption class="carousel_description">La Science de Jurassic Park :
+                            Comment fabriquer un dinosaure (1997)<br>David Lindley & Rob DeSalle</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel2.jpg" alt="image ecran 2" class="carousel_images">
+                        <figcaption class="carousel_description">La Science de Jurassic Park :
+                            Comment fabriquer un dinosaure (1997)<br>David Lindley & Rob DeSalle</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel3.jpg" alt="image ecran 3" class="carousel_images">
+                        <figcaption class="carousel_description">Jurassic Park (1990)<br>Michael Crichton
+                        </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel4.jpg" alt="image ecran 4" class="carousel_images">
+                        <figcaption class="carousel_description">Le Monde perdu (1995)<br>Michael Crichton
+                        </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel5.jpg" alt="image ecran 5" class="carousel_images">
+                        <figcaption class="carousel_description">Le Monde perdu (1912)<br>Sir Arthur Conan Doyle
+                        </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel6.jpg" alt="image ecran 6" class="carousel_images">
+                        <figcaption class="carousel_description">All Yesterdays : Vues uniques et spéculatives de
+                            Dinosaures et autres animaux préhistoriques (2012)<br>C. M. Kosemen, John
+                            Conway & Darren William Naish
+                        </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carousel_ecran">
+                    <figure>
+                        <img src="/public/img/4-book/carousel7.jpg" alt="image ecran 7" class="carousel_images">
+                        <figcaption class="carousel_description">Dinosaures et autres reptiles fossiles de France
+                            (1992)<br>Ville de Montbelliard et Muséum
+                            d'histoire naturelle de Genève</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">

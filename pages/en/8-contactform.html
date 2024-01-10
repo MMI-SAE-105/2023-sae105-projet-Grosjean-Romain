@@ -78,59 +78,64 @@
     <main>
         <div>
             <div>
-                <h1>
-                    Contact
-                </h1>
-            </div>
-            <form class="form" action="/submit_contact" method="post">
-                <p>
-                    <label class="formulaire_nom" for="prenom">Last name:</label><br>
-                    <input class="nomtext" type="text" id="prenom" name="prenom" value="ex: Romain"><br>
-                </p>
-                <p>
-                    <label class="formulaire_nom" for="nom">First name:</label><br>
-                    <input class="nomtext" type="text" id="nom" name="nom" value="ex: Grosjean"><br>
-                </p>
-                <p>
-                    <label class="formulaire_nom" for="nom">Phone number:</label><br>
-                    <input class="nomtext" type="phone.number" id="phone" name="phone" value="ex: 07-82-55-58-13"><br>
-                </p>
-                <p>
-                    <label class="formulaire_nom" for="email">Email:</label><br>
-                    <input class="nom__text" type="email" id="email" name="email" value="exemple@gmail.com"><br>
-                </p>
-                <p>
-                    <label class="formulaire_nom" for="message">Message:</label><br>
-                    <textarea id="message" name="message">Write something...</textarea><br>
-                </p>
-                <p>
-                    <input class="formulaire_btn" type="submit" value="Send">
-                </p>
-            </form>
-        </div>
-
-        <div>
-            <h3>*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
-            <div x-data="{ agreement1: false, agreement2: false }">
-                <div class="button-mid">
-                    <button @click="agreement1 = !agreement1">
-                        <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
-                            alt="Button checkbox empty">
-                        <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
-                            alt="Button checkbox fill">
-                    </button>
-                    <h4>I agree to receive communications from “<span class="green-value">Life Finds A
-                            Way</span>”.</h4>
+                <div class="top">
+                    <figure class="top__img">
+                        <img src="/public/img/8-contactform/0main_contactform.jpg" alt="Main image">
+                    </figure>
+                    <h1 class="top__big-title">
+                        Contact
+                    </h1>
                 </div>
-                <div class="button-mid">
-                    <button @click="agreement2 = !agreement2">
-                        <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
-                            alt="Button checkbox empty">
-                        <img x-show="agreement2" src="/public/icon/larger+/checkbox_fill.svg"
-                            alt="Button checkbox fill">
-                    </button>
-                    <h4>I consent to the storage of my information in accordance with the <b>Privacy Policy</b>.
-                    </h4>
+                <form class="form" action="/submit_contact" method="post">
+                    <p>
+                        <label class="formulaire_nom" for="prenom">Last name:</label><br>
+                        <input class="nomtext" type="text" id="prenom" name="prenom" value="ex: Romain"><br>
+                    </p>
+                    <p>
+                        <label class="formulaire_nom" for="nom">First name:</label><br>
+                        <input class="nomtext" type="text" id="nom" name="nom" value="ex: Grosjean"><br>
+                    </p>
+                    <p>
+                        <label class="formulaire_nom" for="nom">Phone number:</label><br>
+                        <input class="nomtext" type="phone.number" id="phone" name="phone"
+                            value="ex: 07-82-55-58-13"><br>
+                    </p>
+                    <p>
+                        <label class="formulaire_nom" for="email">Email:</label><br>
+                        <input class="nom__text" type="email" id="email" name="email" value="exemple@gmail.com"><br>
+                    </p>
+                    <p>
+                        <label class="formulaire_nom" for="message">Message:</label><br>
+                        <textarea id="message" name="message">Write something...</textarea><br>
+                    </p>
+                    <p>
+                        <input class="formulaire_btn" type="submit" value="Send">
+                    </p>
+                </form>
+            </div>
+            <div>
+                <h3>*By completing this form, you agree to our <b>Privacy Policy</b> and <b>Terms of Use</b>.</h3>
+                <div x-data="{ agreement1: false, agreement2: false }">
+                    <div class="button-mid">
+                        <button @click="agreement1 = !agreement1">
+                            <img x-show="!agreement1" src="/public/icon/larger+/checkbox_empty.svg"
+                                alt="Button checkbox empty">
+                            <img x-show="agreement1" src="/public/icon/larger+/checkbox_fill.svg"
+                                alt="Button checkbox fill">
+                        </button>
+                        <h4>I agree to receive communications from “<span class="green-value">Life Finds A
+                                Way</span>”.</h4>
+                    </div>
+                    <div class="button-mid">
+                        <button @click="agreement2 = !agreement2">
+                            <img x-show="!agreement2" src="/public/icon/larger+/checkbox_empty.svg"
+                                alt="Button checkbox empty">
+                            <img x-show="agreement2" src="/public/icon/larger+/checkbox_fill.svg"
+                                alt="Button checkbox fill">
+                        </button>
+                        <h4>I consent to the storage of my information in accordance with the <b>Privacy Policy</b>.
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,10 +149,10 @@
             <figure class="annex__content-2">
                 <img class="annex__image" src="/public/img/8-contactform/concept_art-2.jpg"
                     alt="Concept art of the river scene in the book">
-                <figcaption class="annex__text">CONCEPT ART OF RIVER PASSAGE IN THE BOOK - © UNIVERSAL PICTURES</figcaption>
+                <figcaption class="annex__text">CONCEPT ART OF RIVER PASSAGE IN THE BOOK - © UNIVERSAL PICTURES
+                </figcaption>
             </figure>
         </div>
-
     </main>
 
     <footer class="footer">
