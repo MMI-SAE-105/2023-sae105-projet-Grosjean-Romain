@@ -3,8 +3,11 @@
 Sommaire :
 
     1. Menu base
-    2. Menu Btn
-    3. Menu content
+    2. Menu Btn Base
+    3. Menu Btn Paleo
+    4. Menu Btn Error-Page
+    5. Menu Btn Articles
+    6. Menu contenu
 */
 
 /* Menu base */
@@ -27,7 +30,7 @@ Sommaire :
     opacity: 1;
 }
 
-/* Menu Btn */
+/* Menu Btn Base */
 
 .menu-btn {
     width: 30px;
@@ -65,6 +68,132 @@ Sommaire :
 
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/* Menu Btn Paleo */
+
+.menu-btn-paleo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-btn__bar-paleo,
+.menu-btn__bar-paleo::before,
+.menu-btn__bar-paleo::after {
+    content: "";
+    background-color: var(--brand-green-dark);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar-paleo::before {
+    top: -10px;
+}
+
+.menu-btn__bar-paleo::after {
+    top: 10px;
+}
+
+.menu-btn--open .menu-btn__bar-paleo,
+.menu-btn--open .menu-btn__bar-paleo::before,
+.menu-btn--open .menu-btn__bar-paleo::after {
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar-paleo::before,
+.menu-btn--open .menu-btn__bar-paleo::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/* Menu Btn Error-Page */
+
+.menu-btn-error {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-btn__bar-error,
+.menu-btn__bar-error::before,
+.menu-btn__bar-error::after {
+    content: "";
+    background-color: var(--grey-1);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar-error::before {
+    top: -10px;
+}
+
+.menu-btn__bar-error::after {
+    top: 10px;
+}
+
+.menu-btn--open .menu-btn__bar-error,
+.menu-btn--open .menu-btn__bar-error::before,
+.menu-btn--open .menu-btn__bar-error::after {
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar-error::before,
+.menu-btn--open .menu-btn__bar-error::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/* Menu Btn Articles */
+
+.menu-btn-article {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-btn__bar-article,
+.menu-btn__bar-article::before,
+.menu-btn__bar-article::after {
+    content: "";
+    background-color: var(--brand-magenta);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar-article::before {
+    top: -10px;
+}
+
+.menu-btn__bar-article::after {
+    top: 10px;
+}
+
+.menu-btn--open .menu-btn__bar-article,
+.menu-btn--open .menu-btn__bar-article::before,
+.menu-btn--open .menu-btn__bar-article::after {
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar-article::before,
+.menu-btn--open .menu-btn__bar-article::after {
     transform: rotate(90deg);
     top: 0;
 }

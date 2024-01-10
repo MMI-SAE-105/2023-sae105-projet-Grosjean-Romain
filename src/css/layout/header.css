@@ -22,6 +22,48 @@ Sommaire :
     transition: opacity 0.3s ease;
 }
 
+.header__paleo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brand-green-light);
+    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.header__error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-2);
+    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.header__article {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-1);
+    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
 .header--atTop {
     background-color: transparent;
 }

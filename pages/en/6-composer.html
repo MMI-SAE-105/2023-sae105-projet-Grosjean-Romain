@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Life Finds A Way Website">
     <title>John Williams ｜ LFAW</title>
-    <link rel="icon" href="/public/icon/logos/logo_articles.svg">
+    <link rel="icon" href="/public/icon/logos/logo_articles1.svg">
     <link rel="stylesheet" href="/src/css/vendors/style.css">
     <link rel="alternate" hreflang="en" href="/pages/en/6-composer.html">
     <script src="https://unpkg.com/alpinejs" defer></script>
@@ -16,11 +16,11 @@
 </head>
 
 <body x-data="{ menuIsOpen: false }" :class="{ 'noscroll': menuIsOpen }">
-    <header class="header" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
+    <header class="header__article" @scroll.window="atTop = ( window.scrolly 500 ? false : true )"
         :class="{ 'header--atTop' : !atTop}">
         <div>
             <a href="/pages/en/index.html">
-                <img class="header__logo" src="/public/icon/logos/logo_typo_up.svg" alt="Logo LFAW">
+                <img class="header__logo" src="/public/icon/logos/logo_typo_up_articles.svg" alt="Logo LFAW">
             </a>
         </div>
         <div class="header__end">
@@ -32,7 +32,7 @@
             </div>
             <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav"
                 @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <span class="menu-btn__bar-article"></span>
             </button>
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
