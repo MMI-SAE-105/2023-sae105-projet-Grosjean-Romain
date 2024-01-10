@@ -5,6 +5,7 @@ Sommaire :
     1. Article Images
     2. Article Vidéos
     3. Article Textes
+    4. En savoir +
 */
 
 /* Article Images */
@@ -23,15 +24,16 @@ Sommaire :
     overflow: hidden;
     padding-left: 4.2vh;
     padding-right: 4.2vh;
-    padding-bottom: 4.2vh;
+    padding-bottom: 2.8vh;
     padding-top: 4.2vh;
     box-sizing: border-box;
 }
 
 .article__image-source {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    max-width: 300%;
+    height: 200%;
+    object-fit: cover;
     border-radius: 1.8vh;
     transition: transform 0.25s ease-in-out;
 }
@@ -114,10 +116,72 @@ Sommaire :
 
 .article-intro,
 .article-details {
-    margin-left: 20px;
+    margin-left: auto;
     margin-right: 20px;
+    padding-top: 2.8vh;
+    padding-left: 1.4vh;
 }
 
-.furthermo {}
+.article-details {
+    font-family: var(--font-small-text);
+    font-size: 13px;
+    text-align: right;
+}
 
-.furthermo-paleo {}
+.article-details p {
+    margin-bottom: 0;
+}
+
+.text-main {
+    margin-bottom: 1.4vh;
+    margin-top: 1.4vh;
+}
+
+.text-main-low {
+    margin-bottom: 1.4vh;
+    margin-top: 1.4vh;
+    font-size: 13px;
+}
+
+.score-mid {
+    display: flex;
+    vertical-align: middle;
+}
+
+/* En savoir + */
+
+.furthermo {
+    background-color: var(--black-1);
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
+    border-radius: 1.8vh;
+    margin-left: 4.2vh;
+    margin-right: 4.2vh;
+}
+
+.furthermo h4 {
+    color: var(--brand-magenta);
+    padding-bottom: 1.4vh;
+    padding-top: 0.7vh;
+    font-family: var(--font-button);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.furthermo-paleo {
+    background-color: var(--brand-green-simple);
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
+    border-radius: 1.8vh;
+    margin-left: 4.2vh;
+    margin-right: 4.2vh;
+}
+
+.furthermo-paleo h4 {
+    color: var(--white);
+    padding-bottom: 1.4vh;
+    padding-top: 0.7vh;
+    font-family: var(--font-button);
+    font-size: 15px;
+    text-transform: uppercase;
+}

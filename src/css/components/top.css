@@ -32,16 +32,25 @@ Sommaire :
     color: var(--white);
 }
 
-.top__title {}
+.top__title {
+    font-size: 23px;
+    font-family: var(--font-heading-1);
+}
 
-.top__sub-title {}
+.top__sub-title {
+    font-size: 19px;
+    font-family: var(--font-heading-2);
+    font-style: bold;
+}
 
 .top__chapo {
-    min-height: 20svh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-height: 20svh;
+    padding-left: 1.4vh;
+    padding-right: 1.4vh;
 }
 
 /* 2. Présentation Homepage/Accueil */

@@ -18,9 +18,8 @@ Sommaire :
 /* Components */
 
 @import "/src/css/components/annex.css";
-@import "/src/css/components/btn.css";
 @import "/src/css/components/card.css";
-@import "/src/css/components/carrousel.css";
+@import "/src/css/components/carousel.css";
 @import "/src/css/components/form.css";
 @import "/src/css/components/menu.css";
 @import "/src/css/components/top.css";

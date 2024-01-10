@@ -123,10 +123,14 @@ Sommaire :
 /* 7. Contenus textuels des Cards */
 
 .card__text {
+    margin-bottom: 0;
+    text-align: 0;
     padding: 2.8vh 2vh;
 }
 
 .card__text>h3 {
+    padding-left: 0;
+    padding-right: 0;
     color: var(--black-1);
     font-size: var(--title-md);
     color: var(--brand-green-light);
@@ -143,6 +147,9 @@ Sommaire :
 }
 
 .card__text>p {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     color: var(--black-2);
     font-size: var(--text-xl);
     line-height: var(--letter-spacing);

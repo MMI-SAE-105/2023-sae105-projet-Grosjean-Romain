@@ -153,6 +153,11 @@ Sommaire :
 .footer__end__text {
     color: var(--grey-1);
     text-decoration: none;
+    margin-bottom: 0;
+    text-align: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px;
 }
 
 .footer__host {
