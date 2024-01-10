@@ -70,6 +70,12 @@ a {
     text-decoration: none;
 }
 
+dt {
+    font-family: var(--font-heading-2);
+    font-weight: 400;
+    color: var(--black-2);
+}
+
 .red-link {
     color: var(--system-1);
     font-weight: bold;
@@ -88,4 +94,3 @@ a {
 .noscroll body {
     overflow: hidden;
 }
-
