@@ -3,8 +3,7 @@
 Sommaire :
 
     1. Images et vidéos
-    2. Figure
-    3. Overlay
+    2. Duotone/Overlay
 */
 
 /* Images et vidéos */
@@ -15,6 +14,79 @@ video {
     height: auto;
 }
 
-/* Figure */
+/* Duotone/Overlay */
 
-figure {}
+.duotone {
+    position: relative;
+    background-color: var(--brand-green-light);
+}
+
+.duotone>img {
+    display: block;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duotone::before {
+    content: "";
+    position: absolute;
+    background-color: var(--brand-green-simple);
+    opacity: 0.3;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    inset: 0;
+}
+
+.duotone__special {
+    position: relative;
+    background-color: var(--);
+}
+
+.duotone__special>img {
+    display: block;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.duotone__special::before {
+    content: "";
+    position: absolute;
+    background-color: var(--);
+    opacity: 0.3;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    inset: 0;
+    opacity: 0.3;
+}
+
+.duotone__main {
+    position: relative;
+    background-color: var(--);
+}
+
+.duotone__main>img {
+    display: block;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duotone__main::before {
+    content: "";
+    position: absolute;
+    background-color: var(--);
+    opacity: 0.3;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    inset: 0;
+    opacity: 0.3;
+}
